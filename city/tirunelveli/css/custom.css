@@ -1,0 +1,22 @@
+/* Add here all your CSS customizations */
+/* .image {
+  background-image: url(../spade.jpeg);
+  background-attachment: fixed;
+} */
+/* .center {
+  display: flex;
+  justify-content: center;
+} */
+.center {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+.welcome {
+  margin-left: 150px;
+}
+@media (max-width: 992px) {
+  .welcome {
+    margin-left: 0px;
+  }
+}

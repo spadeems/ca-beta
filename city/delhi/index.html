@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html data-style-switcher-options="{'colorPrimary': '#0088cc', 'colorSecondary': '#0169fe', 'colorTertiary': '#005AEF', 'colorQuaternary': '#383f48'}">
+
+<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+
+		<title>Spade Campus Ambassador</title>	
+
+		<meta name="keywords" content="HTML5 Template" />
+		<meta name="description" content="Porto - Responsive HTML5 Template">
+		<meta name="author" content="okler.net">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="img/spade.png">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7COpen+Sans:400,700,800" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">		
+		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">		
+		<link rel="stylesheet" href="vendor/animate/animate.min.css">		
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">		
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
+		
+		<!-- Demo CSS -->
+		<link rel="stylesheet" href="css/demos/demo-landing.css">
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="css/skins/skin-landing.css">		<script src="master/style-switcher/style.switcher.localstorage.js"></script> 
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+		
+		<!---PULSE ANIMATION-->
+    <style>
+        @keyframes shadow-pulse {
+            0% {
+                box-shadow: 0 0 0 0px rgba(0, 115, 255, 0.2);
+            }
+
+            100% {
+                box-shadow: 0 0 0 25px rgba(0, 115, 255, 0);
+            }
+        }
+		.heading {
+    text-align: center;
+    color: #454343;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    z-index: 999;
+}
+.white-heading{
+    color: #ffffff;
+}
+.heading:after {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 40px;
+    width: 180px;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    background: url(img/heading-line.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.white-heading:after {
+    background: url(https://i.ibb.co/d7tSD1R/heading-line-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.heading span {
+    font-size: 18px;
+    display: block;
+    font-weight: 500;
+}
+.white-heading span {
+    color: #ffffff;
+}
+/*-----Testimonial-------*/
+
+.testimonial:after {
+    position: absolute;
+    top: -0 !important;
+    left: 0;
+    content: " ";
+    background: url(img/testimonial.bg-top.png);
+    background-size: 100% 100px;
+    width: 100%;
+    height: 100px;
+    float: left;
+    z-index: 99;
+}
+
+.testimonial {
+    min-height: 375px;
+    position: relative;
+    background: url(https://i.ibb.co/PTJDkgb/testimonials.jpg);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position: center;
+        background-size: cover;
+}
+#testimonial4 .carousel-inner:hover{
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+#testimonial4 .carousel-inner:active{
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+#testimonial4 .carousel-inner .item{
+  overflow: hidden;
+}
+
+.testimonial4_indicators .carousel-indicators{
+  left: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 0;
+  height: 20px;
+  bottom: 15px;
+  padding: 0 5px;
+  cursor: e-resize;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+}
+.testimonial4_indicators .carousel-indicators li{
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  border: none;
+  text-indent: 0;
+  margin: 2px 3px;
+  cursor: pointer;
+  display: inline-block;
+  background: #ffffff;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.testimonial4_indicators .carousel-indicators .active{
+  padding: 0;
+  width: 14px;
+  height: 14px;
+  border: none;
+  margin: 2px 3px;
+  background-color: #9dd3af;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.testimonial4_indicators .carousel-indicators::-webkit-scrollbar{
+  height: 3px;
+}
+.testimonial4_indicators .carousel-indicators::-webkit-scrollbar-thumb{
+  background: #eeeeee;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+.testimonial4_control_button .carousel-control{
+  top: 175px;
+  opacity: 1;
+  width: 40px;
+  bottom: auto;
+  height: 40px;
+  font-size: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  overflow: hidden;
+  line-height: 38px;
+  text-shadow: none;
+  text-align: center;
+  position: absolute;
+  background: transparent;
+  border: 2px solid #ffffff;
+  text-transform: uppercase;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all 0.6s cubic-bezier(0.3,1,0,1);
+  transition: all 0.6s cubic-bezier(0.3,1,0,1);
+}
+.testimonial4_control_button .carousel-control.left{
+  left: 7%;
+  top: 50%;
+  right: auto;
+}
+.testimonial4_control_button .carousel-control.right{
+  right: 7%;
+  top: 50%;
+  left: auto;
+}
+.testimonial4_control_button .carousel-control.left:hover,
+.testimonial4_control_button .carousel-control.right:hover{
+  color: #000;
+  background: #fff;
+  border: 2px solid #fff;
+}
+
+.testimonial4_header{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 550px;
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  position: relative;
+}
+.testimonial4_header h4{
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.testimonial4_slide{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+.testimonial4_slide img {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 136px;
+    height: 136px;
+    margin: auto;
+    display: block;
+    color: #f2f2f2;
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -o-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+}
+.testimonial4_slide p {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 40px 0 20px 0;
+}
+.testimonial4_slide h4 {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.testimonial .carousel {
+	padding-bottom:50px;
+}
+.testimonial .carousel-control-next-icon, .testimonial .carousel-control-prev-icon {
+    width: 35px;
+    height: 35px;
+}
+/* ------testimonial  close-------*/
+    </style>
+		
+		<!-- Head Libs -->
+		<script src="vendor/modernizr/modernizr.min.js"></script>
+
+	</head>
+	<body class="alternative-font-4 loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 100}">
+	
+        <header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 120, 'stickyHeaderContainerHeight': 70}">
+				<div class="header-body border-color-primary header-body-bottom-border  bg-dark navbar-dark">
+					
+					<div class="header-container container">
+						<div class="header-row">
+							<div class="header-column">
+								<div class="header-row">
+									<div class="header-logo">
+										<a href="home.html">
+											<img alt="Spade" width="200" height="48" data-sticky-width="82" data-sticky-height="40" src="img/logo.png" style="height: auto; min-width: 200px">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="header-column justify-content-end">
+								<div class="header-row justify-content-end">
+									<div class="header-nav header-nav-links order-2 order-lg-1">
+										<div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+											<nav class="navbar  navbar-dark bg-dark">
+												<ul class="nav nav-pills" id="mainNav">
+													<li>
+														<a href="home.html" style="color:white;">Home</a>
+													</li>
+													<li class="dropdown">
+														<a href="about.html" style="color:white;">About</a>
+													</li>
+													<li>
+														<a href="youth.html" style="color:white;">Youth</a>
+													</li>
+													<li>
+														<a href="membership.html" style="color:white;">Membership</a>
+													</li>
+													<li>
+														<a href="contact-us.html" style="color:white;">Contact Us</a>
+													</li>
+													<li class="dropdown dropdown-mega">												
+														<a class="dropdown-item dropdown-toggle" href="#" style="color:white;">City</a>
+															<ul class="dropdown-menu">															
+																<li>																
+																	<div class="dropdown-mega-content">																	
+																		<div class="row">																		
+																			<div class="col-lg-3">																			
+																				<!--span class="dropdown-mega-sub-title">Elements 1</span-->																			
+																					<ul class="dropdown-mega-sub-nav">																				
+																						<li><a href="#" >City1</a></li>											
+																						<li><a href="#" >City2</a></li>
+																						<li><a href="#" >City3</a></li>	
+																					</ul>																		
+																			</div>																		
+																			<div class="col-lg-3">																			
+																				<!--span class="dropdown-mega-sub-title">Elements 2</span-->								
+																					<ul class="dropdown-mega-sub-nav">													
+																						<li><a href="#">City</a></li>			
+																						<li><a href="#">City</a></li>				
+																						<li><a href="#">City</a></li>		
+																					</ul>																		
+																			</div>																		
+																			<div class="col-lg-3">														
+																				<!--span class="dropdown-mega-sub-title">Elements 3</span-->							
+																					<ul class="dropdown-mega-sub-nav">												
+																						<li><a href="#">City</a></li>							
+																						<li><a href="#">City</a></li>					
+																						<li><a href="#">City</a></li>					
+																					</ul>																		
+																			</div>							
+																			<div class="col-lg-3">																		
+																				<!--span class="dropdown-mega-sub-title">Elements 4</span-->																			
+																					<ul class="dropdown-mega-sub-nav">																				
+																						<li><a href="#">City</a></li>									
+																						<li><a href="#">City</a></li>													
+																						<li><a href="#">City</a></li>				
+																					</ul>																		
+																			</div>				
+																		</div>													
+																	</div>														
+																</li>														
+															</ul>
+													</li>
+													<li>
+														<button type="button" style="position: right;" class="btn btn-primary">Join Now</button>
+													</li>
+												</ul>
+												
+											</nav>
+											<!-- <button type="button" style="position: right; " 
+											class="btn btn-primary">Join Now</button> -->
+										</div>
+										
+										<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+											<i class="fas fa-bars"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+		<div class="loading-overlay">
+			<div class="bounce-loader">
+				<div class="bounce1"></div>
+				<div class="bounce2"></div>
+				<div class="bounce3"></div>
+			</div>
+		</div>
+		
+		
+
+			<div role="main" class="main">
+				<section class="section section-concept section-no-border section-dark section-angled section-angled-reverse pt-5 m-0" id="section-concept" style="background-size: cover; background-position: center; animation-duration: 750ms; animation-delay: 300ms; animation-fill-mode: forwards;" data-plugin-lazyload data-plugin-options="{'threshold': 500}" data-original="img/City/gate.jpg">
+					<div class="section-angled-layer-bottom bg-light" style="padding: 8rem 0;"></div>
+					<div class="container pt-5 mt-5">
+						<div class="row align-items-center pt-3">
+							<div class="col-lg-5 mb-5">
+								
+								<h1 class="font-weight-bold text-12 line-height-2 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" data-appear-animation-duration="750"><strong>D E L H I</strong><br>City Ambassador<span class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600" data-appear-animation-duration="800"><span class="d-inline-block text-primary highlighted-word highlighted-word-rotate highlighted-word-animation-1 alternative-font-3 font-weight-bold text-1 ml-2">2020</span></span></h1>
+								<p class="custom-font-size-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900" data-appear-animation-duration="750"> “Our mission is not merely to survive, but to thrive; and to dig out the hidden talent and provide the platform with some passion, some compassion, some humour, and some style”  </p>
+
+								<div id="popup-content-1" class="dialog dialog-lg zoom-anim-dialog rounded p-3 mfp-hide mfp-close-out">
+									<div class="embed-responsive embed-responsive-4by3">
+									<img src="1(1).jpg" alt="">	
+									</div>
+								</div>
+							</div>
+							
+							</div>
+							<div class="col-md-8 col-lg-6 col-xl-5 custom-header-bar py-4 pr-5 appear-animation z-index-2" data-appear-animation="maskRight" data-appear-animation-delay="1200" data-appear-animation-duration="750">
+								<div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1500">
+									<center>><img src="logo.png" alt="" width="200" height="50"></center>
+                                    <br>
+									<h3 class="position-relative text-center font-weight-bold text-7 line-height-2 mb-0">Since 2019</h3>
+
+									<b><p class="position-relative text-center font-weight-normal mb-1">The Founder: are Abhishek Kumar Jha <br>Cofounders: Pooja, Pattapu Narasimha.</p></b>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			
+
+				<section id="intro" class="section section-no-border section-angled bg-light pt-0 pb-5 m-0">
+					<div class="section-angled-layer-bottom section-angled-layer-increase-angle bg-color-light-scale-1" style="padding: 21rem 0;"></div>
+					<div class="container pb-5" style="min-height: 10px;">
+						<div class="row mb-5 pb-lg-3 counters">
+							<div class="col-lg-10 text-center offset-lg-1">
+								<h1 class="font-weight-bold text-9 mb-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-duration="750" data-plugin-options="{'accY': -200}"><strong>DELHI</strong></h1>
+								<p class="sub-title text-primary text-4 font-weight-semibold positive-ls-2 mt-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" data-appear-animation-duration="750"> City and National Capital Territory  <span class="highlighted-word highlighted-word-animation-1 highlighted-word-animation-1-2 highlighted-word-animation-1 highlighted-word-animation-1-no-rotate alternative-font-4 font-weight-semibold line-height-2 pb-2">of India.</span></p>
+								<p class="text-1rem text-color-default negative-ls-05 pt-3 pb-4 mb-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500" data-appear-animation-duration="750">Delhi, India’s capital territory, is a massive metropolitan area in the country’s north. Indraparastha was the name of Delhi in Mahabharat Era. According to this epic this land was initially a huge mass of forests called 'Kandavaprastha' which was burnt down to build the city of Indraprastha.<br>
+								In Old Delhi, a neighborhood dating to the 1600s, stands the imposing Mughal-era Red Fort, a symbol of India, The Lotus Temple, located in Delhi, India, is a Baháʼí House of Worship that was dedicated in December 1986. Notable for its flowerlike shape, it has become a prominent attraction in the city.  and the sprawling Jama Masjid mosque, whose courtyard accommodates 25,000 people.<br>
+								Akshardham temple the complex displays millennia of traditional Hindu and Indian culture, spirituality, and architecture. Nearby is Chandni Chowk, a vibrant bazaar filled with food carts, sweets shops and spice stalls.
+								</p>
+							</div>
+						</div>
+					</div>
+					</section>
+						<section>
+				<div class="image-gallery sort-destination full-width">
+					<div class="isotope-item">
+						<div class="image-gallery-item">
+							<a href="portfolio-single-wide-slider.html">
+								<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
+									<span class="thumb-info-wrapper">
+										<img src="img/City/d1.jpg" class="img-fluid" alt="">
+										
+										
+									</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="isotope-item">
+						<div class="image-gallery-item">
+							<a href="portfolio-single-wide-slider.html">
+								<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
+									<span class="thumb-info-wrapper">
+										<img src="img/City/d6.jpg" class="img-fluid" alt="" >
+										
+									</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="isotope-item">
+						<div class="image-gallery-item">
+							<a href="portfolio-single-wide-slider.html">
+								<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
+									<span class="thumb-info-wrapper">
+										<img src="img/City/d3.jpg" class="img-fluid" alt="">
+										
+									</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="isotope-item">
+						<div class="image-gallery-item">
+							<a href="portfolio-single-wide-slider.html">
+								<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
+									<span class="thumb-info-wrapper">
+										<img src="img/City/d4.jpg" class="img-fluid" alt="" style="width:500px;height:270px;">
+										
+									</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="isotope-item">
+						<div class="image-gallery-item">
+							<a href="portfolio-single-wide-slider.html">
+								<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
+									<span class="thumb-info-wrapper">
+										<img src="img/City/d5.jpg" class="img-fluid" alt="">
+										
+									</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				</section>
+					<section class="section section-angled section-angled-reverse border-0 m-0 bg-dark section-dark" style="background-size: 100%; background-position: top;" data-plugin-lazyload data-plugin-options="{'threshold': 500}" data-original="img/landing/header_builder_bg.jpg">
+					<div class="section-angled-layer-top section-angled-layer-increase-angle bg-light" style="padding: 4rem 0;"></div>
+					<div class="container py-5 mt-5">
+						<div class="row align-items-center mt-4 pt-2">
+							<div class="col-lg-6 pr-lg-5 position-relative text-center mb-5 mb-lg-0">
+								<img alt="Porto Headers" src="img/lazy.png" data-plugin-lazyload data-plugin-options="{'threshold': 500, 'effect':'fadeIn'}" data-original="img/landing/porto_headers.png" class="img-fluid appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="300" />
+							</div>
+							<div class="col-lg-5 text-center px-lg-0">
+								<h2 class="font-weight-bold text-9 mb-2 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600" data-appear-animation-duration="750"  style="text-align:center;">OUR MISSION</h2>
+								<p class="custom-text-color-1 color-inherit appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800" data-appear-animation-duration="750"  style="text-align:center;">“Our mission is not merely to survive, but to thrive; and to dig out the hidden talent and provide the platform with some passion, some compassion, some humour, and some style”</p>
+								
+							</div>
+						</div>
+					</div>
+				</section>
+					
+
+				<section class="section section-dark section-angled border-0 pb-0 m-0" style="background-size: 100%; background-position: top;" data-plugin-lazyload data-plugin-options="{'threshold': 500}" data-original="img/landing/build_bg.jpg">
+					<div class="section-angled-layer-top section-angled-layer-increase-angle bg-color-light-scale-1" style="padding: 4rem 0;"></div>
+					<div class="container text-center my-5 py-5">
+						<h2 class="font-weight-bold line-height-3 text-12 mt-5 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="250" data-appear-animation-duration="750">Benefits of Joining US</h2>
+						
+						<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900" data-appear-animation-duration="750">
+							<h4 class="font-weight-light text-4 col-lg-6 px-0 offset-lg-3 fw-400 mb-5 opacity-8">Students having strong leadership and immense power to work as a spade family are most welcome to be a part of our team.</h4>
+						</div>
+						<div class="col-12 px-0 pb-2 mb-4">
+							<div class="row flex-column flex-lg-row justify-content-center">
+								<div class="col-auto">
+									<h5 class="font-weight-semibold text-4 positive-ls-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1100" data-appear-animation-duration="750"><i class="fa fa-check"></i> Skills Enhancement</h5>
+								</div>
+								<div class="col-auto mx-5 my-2 my-lg-0">
+									<h5 class="font-weight-semibold text-4 positive-ls-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1400" data-appear-animation-duration="750"><i class="fa fa-check"></i> Growth Opportunity</h5>
+								</div>
+								<div class="col-auto">
+									<h5 class="font-weight-semibold text-4 positive-ls-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1600" data-appear-animation-duration="750"><i class="fa fa-check"></i> Efficient Human Resource </h5><br><br>
+								</div>
+								<div class="col-auto">
+									<h5 class="font-weight-semibold text-4 positive-ls-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1100" data-appear-animation-duration="750"><i class="fa fa-check"></i> Leadership Opportunity</h5>
+								</div>
+								<div class="col-auto mx-5 my-2 my-lg-0">
+									<h5 class="font-weight-semibold text-4 positive-ls-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1400" data-appear-animation-duration="750"><i class="fa fa-check"></i> Professional Network</h5>
+								</div>
+								<div class="col-auto">
+									<h5 class="font-weight-semibold text-4 positive-ls-2 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1600" data-appear-animation-duration="750"><i class="fa fa-check"></i> Live Leading Experience</h5><br><br>
+								</div>
+								
+								
+							</div>
+						</div>
+						</section>
+						
+    <section class="testimonial text-center">
+        <div class="container">
+
+            <div class="heading white-heading">
+                Testimonial
+            </div>
+            <div id="testimonial4" class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x" data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+             
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="testimonial4_slide">
+                            <img src="img/City/1.jpg" class="img-circle img-responsive" />
+                            <p>I began working as a State Ambassador (SA) when I was in 1st year. The work is varied which keeps it interesting, and experience of setting up for events, it helped me develop lots of skills which I'm sure I will use in my future career. </p>
+                            <h4>POONAM</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="img/City/2.jpg" class="img-circle img-responsive" />
+							<p>I really enjoyed working as a state ambassador team member for SPADE EMS. Working with a great team of Spade staff and fellow members of team on varied events made each day different and exciting. As well as it being a great way to meet new people and develop yourself as a professional person.</p>
+                            <h4>VIKASH KUMAR  SRIVASTAV</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="img/City/3.jpg" class="img-circle img-responsive" />
+                            <p>Spade  has a team of very enthusiastic, creative, talented and innovative people. I have an experience of doing internship for 45 days and it was full of learning, leading and tackling different contigency.
+                            I loved the work culture, and the moral ethics that they believe in. I'm positively looking forward to work again with the Spade in State ambassador program as well where I would be exploring my hidden.</p>
+                            <h4>SHALINI KUMARI</h4>
+                        </div>
+                    </div>
+					<div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="img/City/4.jpg" class="img-circle img-responsive" />
+                            <p>I was an intern in Spade in “DIGITAL MARKETING  DEPARTMENT”. As an intern I had learn practically whatever taught in classroom. Due to great efforts of the Spade team I want to stay connected with the company as team member of state ambassador. </p>
+                            <h4>RAHUL KUMAR ADHANA</h4>
+                        </div>
+                    </div>
+					<div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="img/City/5.jpg" class="img-circle img-responsive" />
+                            <p>Working at SPADE an opportunity both to develop as a professional and to help the organization develop. Or thoughts and our contributions are valued every day.  While working with spade my college didn’t get affected as there is no work pressure. </p>
+                            <h4>SHALU KAUSHIK</h4>
+                        </div>
+                    </div>
+					<div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="img/City/6.jpg" class="img-circle img-responsive" />
+                            <p>With Ambassador, everything is super simple and clear. I’ve been really impressed with their team, the platform, and how easy it is to run when the organization team is helpful and ready to correct us . Spadians show their great efforts towards their work. </p>
+                            <h4>PRIYANKA  KUMARI</h4>
+                        </div>
+                    </div>
+					<div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="img/City/7.jpg" class="img-circle img-responsive" />
+                            <p>Ambassador has been a huge help — not only in getting us started, but in customizing a solution that fits exactly what we need.
+                            Connecting with SPADE gives a lot in upgrading our skills .</p>
+                            <h4>SONAL  KUMARI</h4>
+                        </div>
+                    </div>
+					<div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="img/City/8.jpg" class="img-circle img-responsive" />
+                            <p>I was an intern in Spade in “Designing department || digital marketing departmen”. It is super simple and clear. I’ve been really impressed with their team, the platform, and how easy it is to run. </p>
+                            <h4>PUNEET KUMAR</h4>
+                        </div>
+                    </div>
+					<div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="img/City/9.jpg" class="img-circle img-responsive" />
+                            <p>Working at SPADE gives an opportunity both to develop as a professional and to help the organization develop. As an intern, your thoughts and your contributions will be valued every day as you work with respectful and welcoming staff. This has been an excellent internship experience and I couldn’t recommend the organization more highly! </p>
+                            <h4>VAISHNAVI</h4>
+                        </div>
+                    </div>
+					<div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="img/City/10.jpg" class="img-circle img-responsive" />
+                            <p>SPADE has provided me not only a comprehensive look into my area of study, but also the skills to reach across ideological differences to facilitate constructive action. I have learned more about myself through this internship whether it be professional development or leadership qualities, which will carry over into my future endeavors. </p>
+                            <h4>NEHA SAXENA </h4>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+				<footer class="py-4 footer" id="footer">
+
+                <div class="container text-center text-md-left">
+                    <div class="footer-ribbon">
+                        <span>Get in Touch</span>
+                    </div>
+                    <!-- <button type="button" style="position: absolute;
+				right: 100px;
+				top: 5px;" class="btn btn-primary">Join Now</button> -->
+
+                    <div class="row text-center text-md-left mt-3 pb-3">
+
+                        <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 mx-auto mt-3 order-sm-1 order-md-1 order-lg-1">
+                            <img src="https://raw.githubusercontent.com/spadeems/web/master/img/brand-logo-white.png"
+                                alt="spadeems logo" class="img-fluid"><br><br>
+                            <p class="text-left ">SPADE is a team of experienced
+                                professionals who are guided by their own passion to deliver exhilarating outcomes in
+                                the
+                                fields
+                                of marketing, technical, events, advertising, brand promotions, as well as in
+                                exhibitions.
+                                With
+                                our creative
+                                minds at work. we offer the most innovative solutions to help clients take their brands
+                                to a
+                                whole new level.
+
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a class="btn  border px-1 py-0  mx-1"
+                                        href="https://www.facebook.com/marketingspade/" target="_blank">
+                                        <i class="fab fa-facebook-f text-light"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn  border px-1 py-0  mx-1"
+                                        href="https://www.instagram.com/marketingspade/" target="_blank">
+                                        <i class="fab fa-instagram  text-light"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn  border px-1 py-0  mx-1" href="https://wa.me/917508450610/"
+                                        target="_blank">
+                                        <i class="fab fa-whatsapp  text-light"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn  border px-1 py-0  mx-1" href="https://twitter.com/EmsSpade/"
+                                        target="_blank">
+                                        <i class="fab fa-twitter  text-light"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn  border px-1 py-0  mx-1"
+                                        href="https://www.linkedin.com/company/marketingspade/" target="_blank">
+                                        <i class="fab fa-linkedin  text-light"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn  border px-1 py-0  mx-1" href="https://www.youtube.com/spadeems/"
+                                        target="_blank">
+                                        <i class="fab fa-youtube  text-light"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            </p>
+                        </div>
+
+                        <div
+                            class="col-xs-12 col-md-6 col-lg-2 col-xl-2 mx-auto mt-3 order-sm-2 order-md-3 order-lg-2 ">
+                            <h6 class="text-uppercase text-light mb-4 font-weight-bold">Useful links</h6>
+                            <p>
+                                <a href="services.php">Services</a>
+                            </p>
+                            <p>
+                                <a href="about.php">About</a>
+                            </p>
+                            <p>
+                                <a href="contact.php">Contact</a>
+                            </p>
+                            <p>
+                                <button type="button" style="position: relative;
+							top:5px;
+							animation: shadow-pulse 1s infinite;
+							cursor: pointer;
+							" class="btn btn-primary">Join Now</button>
+                            </p>
+                        </div>
+
+                        <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 mx-auto mt-3 order-sm-3 order-md-4 order-lg-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold ">Contact</h6>
+                            <p>
+                                <i class="fa fa-home mr-3"></i> SPADE Event Management Services Private Ltd.<br> 167 New
+                                Defence Colony,
+                                <br>Jalandhar Cantt</p>
+                            <p>
+                                <i class="fa fa-envelope mr-3"></i>
+                                <a href="/cdn-cgi/l/email-protection#d9b0b7bfb699aaa9b8bdbcbcb4aaf7bab6b4f6"><span
+                                        class="__cf_email__ "
+                                        data-cfemail="bbd2d5ddd4fbc8cbdadfdeded6c895d8d4d6">info@spadeems.com</span></a>
+                            </p>
+                            <p>
+                                <i class="fa fa-phone mr-3"></i> <a href="tel:+917508450610">+91 94637
+                                    17334</a>
+                            </p>
+                            <p>
+                                <i class="fab fa-whatsapp mr-3"></i> <a href="https://wa.me/917508450610">+91
+                                    94637 17334</a>
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 mx-auto mt-3 order-sm-4 order-md-2 order-lg-4">
+                            <!-- <a class="twitter-timeline" data-width="400" data-height="100%" data-dnt="true" data-theme="light" href="https://twitter.com/EmsSpade?ref_src=twsrc%5Etfw">Tweets by EmsSpade</a>
+						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+                            <iframe
+                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmarketingspade%2F&tabs=timeline&width=300&height=400&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+                                width="300" height="100%" style="border:none;overflow:hidden;min-height: 400px"
+                                scrolling="no" frameborder="0" allowTransparency="true"
+                                allow="encrypted-media"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <hr class="bg-white">
+
+                <div class="footer-copyright text-center">
+                    Copyright: © 2020
+                    <a href="https://spadeems.com/" style="text-decoration: none;">
+                        <strong class="text-blue">SPADE EMS</strong>
+                    </a>
+                    All Rights Reserved.
+                </div>
+            </footer>
+                
+			</div>
+			
+
+		<!-- Vendor -->
+		<script src="vendor/jquery/jquery.min.js"></script>		<script src="vendor/jquery.appear/jquery.appear.min.js"></script>		<script src="vendor/jquery.easing/jquery.easing.min.js"></script>		<script src="vendor/jquery.cookie/jquery.cookie.min.js"></script>		<script src="master/style-switcher/style.switcher.js" id="styleSwitcherScript" data-base-path="" data-skin-src=""></script>		<script src="vendor/popper/umd/popper.min.js"></script>		<script src="vendor/bootstrap/js/bootstrap.min.js"></script>		<script src="vendor/common/common.min.js"></script>		<script src="vendor/jquery.validation/jquery.validate.min.js"></script>		<script src="vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>		<script src="vendor/jquery.gmap/jquery.gmap.min.js"></script>		<script src="vendor/jquery.lazyload/jquery.lazyload.min.js"></script>		<script src="vendor/isotope/jquery.isotope.min.js"></script>		<script src="vendor/owl.carousel/owl.carousel.min.js"></script>		<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>		<script src="vendor/vide/jquery.vide.min.js"></script>		<script src="vendor/vivus/vivus.min.js"></script>
+		
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+		
+		<!-- Current Page Vendor and Views -->
+		<script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>		<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+		
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+		<!-- Examples -->
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+		
+			ga('create', 'UA-42715764-5', 'auto');
+			ga('send', 'pageview');
+		</script>
+
+	</body>
+
+<!-- Mirrored from portotheme.com/html/porto/8.0.0/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Jul 2020 17:41:14 GMT -->
+</html>
+                
