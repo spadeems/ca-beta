@@ -65,6 +65,14 @@
                 box-shadow: 0 0 0 25px rgba(0, 115, 255, 0);
             }
         }
+		/*JOIN-BUTTON*/
+		  #mainNav .join-btn{
+		    margin: 25px 0 0 25px;
+			text-decoration: none;
+		  }
+		  #mainNav .join-btn a{
+			text-decoration: none;
+		  }
     </style>
 
     <!-- Head Libs -->
@@ -96,7 +104,7 @@
 											<nav class="collapse  navbar-dark bg-dark">
 												<ul class="nav nav-pills" id="mainNav">
 													<li>
-														<a href="https://www.spadeems.org/" style="color:white;">Home</a>
+														<a href="home.html" style="color:white;">Home</a>
 													</li>
 													<li class="dropdown">
 														<a href="about.html" style="color:white;">About</a>
@@ -111,47 +119,18 @@
 														<a href="contact-us.html" style="color:white;">Contact Us</a>
 													</li>
 													<li class="dropdown dropdown-mega">												
-														<a class="dropdown-item dropdown-toggle" href="#" style="color:white;">City</a>
-															<ul class="dropdown-menu">															
-																<li>																
-																	<div class="dropdown-mega-content">																	
-																		<div class="row">																		
-																			<div class="col-lg-3">																			
-																				<!--span class="dropdown-mega-sub-title">Elements 1</span-->																			
-																					<ul class="dropdown-mega-sub-nav">																				
-																							<li><a href="https://www.spadeems.org/city/dehradun/" >Dehradun</a></li>											
-																						<li><a href="https://www.spadeems.org/city/delhi/" >Delhi</a></li>
-																					</ul>																		
-																			</div>																		
-																			<div class="col-lg-3">																			
-																				<!--span class="dropdown-mega-sub-title">Elements 2</span-->								
-																					<ul class="dropdown-mega-sub-nav">													
-																							<li><a href="https://www.spadeems.org/city/hyderabad/">Hyderabad</a></li>			
-																						<li><a href="https://www.spadeems.org/city/jalandhar/">Jalandhar</a></li>		
-																					</ul>																		
-																			</div>																		
-																			<div class="col-lg-3">														
-																				<!--span class="dropdown-mega-sub-title">Elements 3</span-->							
-																					<ul class="dropdown-mega-sub-nav">												
-																							<li><a href="https://www.spadeems.org/city/phagwara/">Phagwara</a></li>							
-																						<li><a href="https://www.spadeems.org/city/ranchi/">Ranchi</a></li>						
-																					</ul>																		
-																			</div>							
-																			<div class="col-lg-3">																		
-																				<!--span class="dropdown-mega-sub-title">Elements 4</span-->																			
-																					<ul class="dropdown-mega-sub-nav">																				
-																						<li><a href="https://www.spadeems.org/city/thrissur/">Thrissur</a></li>									
-																						<li><a href="https://www.spadeems.org/city/tirunelveli/">Tirunelveli</a></li>				
-																					</ul>																		
-																			</div>				
-																		</div>													
-																	</div>														
-																</li>														
+														<a class="dropdown-item dropdown-toggle" href="#">City</a>
+															<ul class="dropdown-menu">
+																<!--<li><a href="city/bhubaneswar/index.html">Bhubaneswar</a></li>-->
+																<li><a href="city/jalandhar/index.html">Jalandhar</a></li>
+																<li><a href="city/phagwara/index.html">Phagwara</a></li>
+																<li><a href="city/ranchi/home.html">Ranchi</a></li>
+																<li><a href="city/tirunelveli/home.html">Tirunelveli</a></li>
 															</ul>
 													</li>
 													<li>
-														<button type="button" style="position: right; margin-top: 25px; " 
-														class="btn btn-primary" ><a href="https://www.spadeems.org/join/" style="color: white;" >Join Now</a></button>
+														<button type="button" class="btn btn-primary join-btn" ><a class="typeform-share button" href="https://form.typeform.com/to/nSveM9" data-mode="popup" style="color: #fff;">
+														Join Now</a></button>
 													</li>
 												</ul>
 												
@@ -880,6 +859,7 @@
         ga('create', 'UA-42715764-5', 'auto');
         ga('send', 'pageview');
     </script>
+	<script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
     <!-- <a href="index.html#demos" class="go-to-demos"><i class="fas fa-arrow-left"></i> More Demos</a> -->
 
 </body>

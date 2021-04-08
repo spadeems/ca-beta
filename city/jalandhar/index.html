@@ -3,12 +3,12 @@
 	data-style-switcher-options="{'colorPrimary': '#0088cc', 'colorSecondary': '#0169fe', 'colorTertiary': '#005AEF', 'colorQuaternary': '#383f48'}">
 
 <head>
-
+	<!-------------------------------------------J-A-L-A-N-D-H-A-R--------------------------------------------------->
 	<!-- Basic -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>Spade Campus Ambassador</title>
+	<title>Jalandhar Campus Ambassador</title>
 
 	<meta name="keywords" content="HTML5 Template" />
 	<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -49,6 +49,10 @@
 
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/event.css" type="text/css">
+	
+	<!--fontawesome icons-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!---PULSE ANIMATION-->
 	<style>
@@ -61,6 +65,143 @@
 				box-shadow: 0 0 0 25px rgba(0, 115, 255, 0);
 			}
 		}
+		
+		/******************************************/
+		  /* Make the image-slider fully responsive */
+		  /******************************************/
+		  .carousel-inner img {
+			width: 120%;
+			height: 120%;
+			
+		  }
+		  /***************************/
+		  /*zoom-out-effect-imgSlider*/
+		  /***************************/
+		  .carousel-inner img{
+			  margin-top: 300px;
+			  position: relative;
+			  left: 50%;
+			  top: 50%;
+			  transform: translate(-50%, -50%);
+			  animation: zoom-out 6s linear infinite;
+		  }
+		  @keyframes zoom-out{
+			100%{
+			  width: 100%;
+			  height: 100%;
+			}
+		  }
+		  
+		  @media (max-width: 900px){
+			.carousel-inner .text-box{
+				width: 350px!important;
+			}
+			.carousel-inner .text-box h1{
+			  font-size: 40px;
+			}
+		    .carousel-inner .text-box p{
+			  font-size: 14px;
+			}
+		  }
+		  
+		  @media (max-width: 800px){
+		    .carousel-inner img{
+		      margin-top: 250px;
+			}
+			.carousel-inner .text-box{
+				width: 400px!important;
+				position: absolute;
+				top: 100px;
+				left: 100px!important;
+				
+		    }
+			.carousel-inner .text-box p{
+			  display: none;
+			}
+		  }
+		  @media (max-width: 550px){
+		    .carousel-inner img{
+			  margin-top: 100px;
+			}
+			.carousel-inner .text-box{
+			  display: none;
+			}
+			.carousel-inner .overlayy{
+			  background: rgba(0,0,0,0.1)!important;
+			}
+		  
+		    .main .m-slide{
+			  height: 300px;
+			}
+			.carousel-inner img{
+			  margin-top: 150px;
+			  
+			}
+			.main .slide .carousel-control-next, .main .slide .carousel-control-prev{
+				height: 300px;
+			}
+		  }
+		  /******************************/
+		  /*Carousel-Text-With-Animation*/
+		  /******************************/
+		  
+		  .carousel-inner .text-box{
+			width: 600px;
+			position: absolute;
+			top: 200px;
+			left: 150px;
+			color: #fff;
+			animation: textup 30s linear infinite;
+			transform: translateY(100px);
+		  }
+		  .carousel-inner .overlayy{
+		    width: 100%;
+			height: 200vh;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: rgba(0,0,0,.4);
+		  }
+		  @keyframes textup{
+			10%{
+				transform: translateY(0px);
+			}
+			100%{
+				transform: translateY(0px);
+			}
+		  }
+		  .text-box h1{
+			margin-bottom: 40px;
+			color: #ccc;
+			font-weight: bold;
+		  }
+		  .text-box p{
+			font-size: 18px;
+			line-height: 20px;
+			margin-top: 80px;
+			color: #cacdd0;
+			letter-spacing: 1px;
+			font-family: monospace;
+			font-weight: 400;
+		  }
+		  .text-box  span{
+			background: #2ba3f9;
+			height: 2px;
+			width: 100px;
+			position: absolute;
+			left: 0;
+		  }
+		  
+		
+		/*JOIN-BUTTON*/
+		
+		  #mainNav .join-btn{
+		    margin: 25px 0 0 25px;
+			text-decoration: none;
+		  }
+		  #mainNav .join-btn a{
+			text-decoration: none;
+		  }
 	</style>
 
 	<!-- Head Libs -->
@@ -99,75 +240,41 @@
 						<div class="header-column justify-content-end">
 							<div class="header-row">
 								<div class="header-nav header-nav-links order-2 order-lg-1">
-									<div
-										class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
+									<div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
 										<nav class="collapse navbar-dark bg-dark" data-toggle="collapse">
 											<ul class="nav nav-pills" id="mainNav">
 												<li>
-													<a class="dropdown-item dropdown-toggle" href="https://www.spadeems.org/"
-														style="color:white;">Home</a>
+													<a class="active" href="../../home.html">Home</a>
 												</li>
 												<li class="dropdown">
-													<a class="dropdown-item dropdown-toggle" href="about.html"
-														style="color:white;">About</a>
+													<a href="../../about.html">About</a>
 												</li>
 												<li>
-													<a class="dropdown-item dropdown-toggle" href="youth.html"
-														style="color:white;">Youth</a>
+													<a href="../../youth.html">Youth</a>
 												</li>
 												<li>
-													<a class="dropdown-item dropdown-toggle" href="membership.html"
-														style="color:white;">Membership</a>
+													<a href="../../membership.html">Membership</a>
 												</li>
 												<li>
 													<!-- navbar contact us -->
-													<a class="dropdown-item dropdown-toggle" href="contact-us.html"
-														style="color:white;">Contact Us</a>
+													<a href="../../contact-us.html">Contact Us</a>
 												</li>
-													<li class="dropdown dropdown-mega">												
-														<a class="dropdown-item dropdown-toggle" href="#" style="color:white;">City</a>
-															<ul class="dropdown-menu">															
-																<li>																
-																	<div class="dropdown-mega-content">																	
-																		<div class="row">																		
-																			<div class="col-lg-3">																			
-																				<!--span class="dropdown-mega-sub-title">Elements 1</span-->																			
-																					<ul class="dropdown-mega-sub-nav">																				
-																						<li><a href="https://www.spadeems.org/city/dehradun/" >Dehradun</a></li>											
-																						<li><a href="https://www.spadeems.org/city/delhi/" >Delhi</a></li>
-																					</ul>																		
-																			</div>																		
-																			<div class="col-lg-3">																			
-																				<!--span class="dropdown-mega-sub-title">Elements 2</span-->								
-																					<ul class="dropdown-mega-sub-nav">													
-																						<li><a href="https://www.spadeems.org/city/hyderabad/">Hyderabad</a></li>			
-																						<li><a href="https://www.spadeems.org/city/jalandhar/">Jalandhar</a></li>		
-																					</ul>																		
-																			</div>																		
-																			<div class="col-lg-3">														
-																				<!--span class="dropdown-mega-sub-title">Elements 3</span-->							
-																					<ul class="dropdown-mega-sub-nav">												
-																						<li><a href="https://www.spadeems.org/city/phagwara/">Phagwara</a></li>							
-																						<li><a href="https://www.spadeems.org/city/ranchi/">Ranchi</a></li>				
-																					</ul>																		
-																			</div>							
-																			<div class="col-lg-3">																		
-																				<!--span class="dropdown-mega-sub-title">Elements 4</span-->																			
-																					<ul class="dropdown-mega-sub-nav">																				
-																						<li><a href="https://www.spadeems.org/city/thrissur/">Thrissur</a></li>									
-																						<li><a href="https://www.spadeems.org/city/tirunelveli/">Tirunelveli</a></li>			
-																					</ul>																		
-																			</div>				
-																		</div>													
-																	</div>														
-																</li>														
+												<li class="dropdown dropdown-mega">												
+														<a class="dropdown-item dropdown-toggle" href="#">City</a>
+															<ul class="dropdown-menu">
+																<!--<li><a href="../bhubaneswar/index.html">Bhubaneswar</a></li>-->
+																<li><a href="../jalandhar/index.html">Jalandhar</a></li>
+																<li><a href="../phagwara/index.html">Phagwara</a></li>
+																<li><a href="../ranchi/home.html">Ranchi</a></li>
+																<li><a href="../tirunelveli/index.html">Tirunelveli</a></li>
 															</ul>
-													</li>
-											</ul>
+												</li>
+											
 												<li>
-														<button type="button" style="position: right; margin-top: 25px; " 
-														class="btn btn-primary" ><a href="https://www.spadeems.org/join/" style="color: white;" >Join Now</a></button>
-													</li>
+														<button type="button" class="btn btn-primary join-btn" ><a class="typeform-share button" href="https://form.typeform.com/to/nSveM9" data-mode="popup" style="color: #fff;">
+														Join Now</a></button>
+												</li>
+											</ul>
 										</nav>
 										<!-- <button type="button" style="position: right; " 
 											class="btn btn-primary">Join Now</button> -->
@@ -186,66 +293,126 @@
 
 
 		<div role="main" class="main">
-			<section
-				class="section section-concept section-no-border section-dark section-angled section-angled-reverse pt-5 m-0"
-				id="section-concept"
-				style="background-size: cover; background-position: center; animation-duration: 750ms; animation-delay: 300ms; animation-fill-mode: forwards;"
-				data-plugin-lazyload data-plugin-options="{'threshold': 500}"
-				data-original="img/jalandar_img/j_mandir4.jpg">
-				<div class="section-angled-layer-bottom bg-light" style="padding: 8rem 0;"></div>
-				<div class="container pt-5 mt-5">
-					<div class="row align-items-center pt-3">
-						<div class="col-lg-5 mb-5">
+			<!-----------------------------------------------------SLIDER-------------------------------------->
+				<section class="m-slide">
+					<div id="demo" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="false" style="height:100vh; ">
 
-							<h1 class="font-weight-bold text-12 line-height-2 mb-3 appear-animation"
-								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400"
-								data-appear-animation-duration="750">City Ambassador <br>J A L A N D A R<span
-									class="appear-animation" data-appear-animation="fadeInRightShorter"
-									data-appear-animation-delay="600" data-appear-animation-duration="800"><span
-										class="d-inline-block text-primary highlighted-word highlighted-word-rotate highlighted-word-animation-1 alternative-font-3 font-weight-bold text-1 ml-2">2020</span></span>
-							</h1>
-							<p class="custom-font-size-1 appear-animation" data-appear-animation="fadeInUpShorter"
-								data-appear-animation-delay="900" data-appear-animation-duration="750">JALANDHAR is an
-								ancient city in the north Indian state of PUNJAB. Its home to DEVI TALAB MANDIR, a
-								centuries hold Indian temple dedicated to the goddess durga , with a tank considered
-								sacred by devotees. The whitewash gurdwara chhevin patshahi is a place of workship for
-								Sikhs. To the southest lies ST. MARY’s Cathedral a modern building with Punjabi
-								architectural elements 2 domed tower and a pond.
-								<a href="#intro" data-hash data-hash-offset="120"
-									class="text-color-light font-weight-semibold text-1 d-block">VIEW MORE <i
-										class="fa fa-long-arrow-alt-right ml-1"></i></a></p>
-							<!-- <a class="video-open lightbox d-block text-color-light appear-animation" href="#joinus"
-								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1100"
-								data-appear-animation-duration="750" data-plugin-options="{'type':'inline'}">
-								<div class="video-open-icon"></div>Apply Now
-							</a> -->
+					  <!-- Indicators -->
+					  <ul class="carousel-indicators" style="display: none;">
+						<li data-target="#demo" data-slide-to="0" class="active"></li>
+						<li data-target="#demo" data-slide-to="1"></li>
+						<li data-target="#demo" data-slide-to="2"></li>
+						<li data-target="#demo" data-slide-to="3"></li>
+						<li data-target="#demo" data-slide-to="4"></li>
+						<li data-target="#demo" data-slide-to="5"></li>
+						<li data-target="#demo" data-slide-to="6"></li>
+						<li data-target="#demo" data-slide-to="7"></li>
+						<li data-target="#demo" data-slide-to="8"></li>
+					  </ul>
+					  
+					  <!-- The slideshow -->
+					  <div class="carousel-inner">
+						
+						<div class="carousel-item active banner1">
+						  <img class="d-block" src="Images/jal1.jpg">
+						  <!----------<div class="overlayy"></div>
+						  <div class="text-box text-box1">
+							<h1>City Ambassador Program 2020</h1>
+							<span></span>
+							<p>The SPADE EMS City Ambassador Program is a platform for students who are passionate about programming to start and run an active programming club in their city. A SPADE EMS City Ambassador is a leader with a keen interest in starting and building a programming community.
+							</p>
+						  </div>------------>
 						</div>
-						<div class="col-lg-6 offset-lg-1 mb-5 appear-animation" data-appear-animation="fadeIn"
-							data-appear-animation-delay="1200" data-appear-animation-duration="750">
-							<!-- <div class="border-width-10 border-color-light clearfix border border-radius">
-								<img src="img/1.jpg" alt="" width="570" height="400">
-
-							</div> -->
+						<div class="carousel-item banner2">
+						  <img class="d-block" src="Images/jal2.jpg">
+						  <!----------<div class="overlayy"></div>
+						  <div class="text-box text-box1">
+							<h1>3 C's- Career, College & Corporate</h1>
+							<span></span>
+							<p>webinar on the 3 C's- Career, College & Corporate! to get more insight about Career, College and Corporate And to get exposure to brain-storming session that was full of knowledge and resources.<br>by Dr. Ankur Sodhi, Associate Director in Career Services & Corporate Relations at Upgrad.</p>
+						  </div>------------>
 						</div>
-						<div class="col-md-8 col-lg-6 col-xl-5 custom-header-bar py-4 pr-5 appear-animation z-index-2"
-							data-appear-animation="maskRight" data-appear-animation-delay="1200"
-							data-appear-animation-duration="750">
-							<div class="appear-animation" data-appear-animation="fadeInRightShorter"
-								data-appear-animation-delay="1500">
-								<center>><img src="img/logo1.png" alt="" width="200" height="50"></center>
-								<br>
-								<h3 class="position-relative text-center font-weight-bold text-7 line-height-2 mb-0">
-									Since 2019</h3>
+						<div class="carousel-item banner3">
+						  <img class="d-block" src="Images/jal3.jpg">
+						  <!----------<div class="overlayy"></div>
+						  <div class="text-box text-box1">
+							<h1>Website Development Services</h1>
+							<span></span>
+							<p>Do something that should attract your customers!<br>SpadeEMS provides service like:<br>Web Design <br> E-Commerce Development <br> Web Engineering <br>Web Content Development.</p>
+						  </div>------------>
+						</div>
+						<div class="carousel-item banner4">
+						  <img class="d-block" src="Images/jal4.jpg">
+						  <!----------<div class="overlayy"></div>
+						  <div class="text-box text-box1">
+							<h1>Collaborations!!!</h1>
+							<span></span>
+							<p>Proud moment for all at SPADE, SPADE has Ink an MOU with Multinational Company Caddcentreired of working long shifts without any gain....Come and work with SPADE Jalandhar where you can make a difference !<br>
+							We will provide you with a platform to showcase your talent and will help you groom as an individual.
+							You would be working on Team projects to add value to</p>
+						  </div>------------->
+						</div>
+						<div class="carousel-item banner5">
+						  <img class="d-block" src="Images/jal5.jpg">
+						  <!------------<div class="overlayy"></div>
+						  <div class="text-box text-box1">
+							<h1>We Are Hiring !!!</h1>
+							<span></span>
+							<p>Tired of working long shifts without any gain....Come and work with SPADE where you can make a difference !
+							We will provide you with a platform to showcase your talent and will help you groom as an individual.</p>
+						  </div>----------------->
+						</div>
+						
+					  </div>
+					  
+					  <!-- Left and right controls -->
+					  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					  </a>
+					  <a class="carousel-control-next" href="#demo" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					  </a>
+					</div>
 
-								<b>
-									<p class="position-relative text-center font-weight-normal mb-1">The Founder: are
-										Abhishek Kumar Jha <br>Cofounders: Pooja</p>
-								</b>
+				</section>
+				
+			<section class="section section-concept section-no-border section-dark section-angled section-angled-reverse pt-5 m-0" id="section-concept" style="background-size: cover; background-position: center; animation-duration: 750ms; animation-delay: 300ms; animation-fill-mode: forwards;" data-plugin-lazyload data-plugin-options="{'threshold': 500}" data-original="img/landing/header_bg.jpg">
+					<div class="section-angled-layer-bottom bg-light" style="padding: 8rem 0;"></div>
+					<div class="container pt-5 mt-5">
+						<div class="row align-items-center pt-3">
+							<div class="col-lg-5 mb-5">
+								
+								<h1 class="font-weight-bold text-12 line-height-2 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400" data-appear-animation-duration="750">Jalandhar<br>City Ambassador<span class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="600" data-appear-animation-duration="800"><span class="d-inline-block text-primary highlighted-word highlighted-word-rotate highlighted-word-animation-1 alternative-font-3 font-weight-bold text-1 ml-2">2020</span></span></h1>
+								<p class="custom-font-size-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="900" data-appear-animation-duration="750">Spade is working on Dig Out the Hidden Talent. Our mission is not merely to survive, but to thrive and to provide the platform with some passion, some compassion, some humor and some style. <a href="#intro" data-hash data-hash-offset="120" class="text-color-light font-weight-semibold text-1 d-block">VIEW MORE <i class="fa fa-long-arrow-alt-right ml-1"></i></a></p>
+								<a class="video-open lightbox d-block text-color-light appear-animation" href="#popup-content-1" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1100" data-appear-animation-duration="750" data-plugin-options="{'type':'inline'}"><div class="video-open-icon"></div>Apply Now</a>
+
+								<div id="popup-content-1" class="dialog dialog-lg zoom-anim-dialog rounded p-3 mfp-hide mfp-close-out">
+									<div class="embed-responsive embed-responsive-4by3">
+									<img src="img/1.jpg" alt="">	
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6 offset-lg-1 mb-5 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="1200" data-appear-animation-duration="750">
+								
+								<img src="img/j_mandir4.jpg" alt="" width="570" height="400">
+								
+							</div>
+							<div class="col-md-8 col-lg-6 col-xl-5 custom-header-bar py-4 pr-5 appear-animation z-index-2" data-appear-animation="maskRight" data-appear-animation-delay="1200" data-appear-animation-duration="750">
+								<div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1500">
+									<center><img src="img/logo.png" alt="" width="200" height="50"></center>
+                                    <br>
+									<h3 class="position-relative text-center font-weight-bold text-7 line-height-2 mb-0">Since 2019</h3>
+
+									<b><p class="position-relative text-center font-weight-normal mb-1">The Founder: are Abhishek Kumar Jha <br>Cofounders: Pooja</p></b>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+		
+			
+			
+			
 
 			<section id="intro" class="section section-no-border section-angled bg-light pt-0 pb-5 m-0">
 				<div class="container pb-5" style="min-height: 200px;">
@@ -273,6 +440,70 @@
 					</div>
 				</div>
 			</section>
+			
+		<!--	
+			<section id="events">
+		<div class="leftbox">
+			<div class="content">
+				<h1>
+					Events And Shows
+				</h1>
+				<p>
+					SPADE has organized various successful events and many more events to come by which will give a chance to learn everything new everyday.<br>
+					As it is rightly said "Life is an Event, Make it  Memorable" and every moment should be a new experience with this. SPADE promise to give you a new learning experience through their events where you  will get the  chance to learn something  new everyday.<br>
+					SPADE has successfully organized various events and many more events to come by.
+				</p>
+			</div>
+		</div>
+		<div class="events">
+			<ul>
+				<li>
+					<div class="time">
+						<h2>25 <br> <span>OCTOBER</span></h2>
+					</div>
+					<div class="details">
+						<h3>Where does it come from</h3>
+						<p>
+							Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything.
+
+						</p>
+						<a>View Details</a>
+					</div>
+					<div style="clear: both;"></div>
+				</li>
+				<li>
+					<div class="time">
+						<h2>25 <br> <span>OCTOBER</span></h2>
+					</div>
+					<div class="details">
+						<h3>Where does it come from</h3>
+						<p>
+							Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything.
+
+						</p>
+						<a>View Details</a>
+					</div>
+					<div style="clear: both;"></div>
+				</li>
+				<li>
+					<div class="time">
+						<h2>25 <br> <span>OCTOBER</span></h2>
+					</div>
+					<div class="details">
+						<h3>Where does it come from</h3>
+						<p>
+						Spade ki Pathshala is back with a musical blockbuster, now to let you sing and dance in the tunes of Sharmishtha Saha aka DJ  	Mishti, a Dentist cum DJ!
+
+						</p>
+						<a>View Details</a>
+					</div>
+					<div style="clear: both;"></div>
+				</li>
+				
+			</ul>
+		</div>
+	</section>
+	<br /><br />--><br />
 
 
 			<section class="section section-angled section-angled-reverse border-0 m-0 bg-dark section-dark"
@@ -801,7 +1032,7 @@
 					<div class="row text-center text-md-left mt-3 pb-3">
 
 						<div class="col-xs-12 col-md-6 col-lg-3 col-xl-3 mx-auto mt-3 order-sm-1 order-md-1 order-lg-1">
-							<img src="logo.png" alt="spadeems logo" class="img-fluid"><br><br>
+							<img src="img/logo.png" alt="spadeems logo" class="img-fluid"><br><br>
 							<p class="text-left ">SPADE is a team of experienced
 								professionals who are guided by their own passion to deliver exhilarating outcomes
 								in
@@ -903,10 +1134,10 @@
 							<!-- <a class="twitter-timeline" data-width="400" data-height="100%" data-dnt="true" data-theme="light" href="https://twitter.com/EmsSpade?ref_src=twsrc%5Etfw">Tweets by EmsSpade</a>
 						<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 							<iframe
-								src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmarketingspade%2F&tabs=timeline&width=300&height=400&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
-								width="300" height="100%" style="border:none;overflow:hidden;min-height: 400px"
-								scrolling="no" frameborder="0" allowTransparency="true"
-								allow="encrypted-media"></iframe>
+                                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmarketingspade%2F&tabs=timeline&width=300&height=400&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+                                width="300" height="100%" style="border:none;overflow:hidden;min-height: 400px"
+                                scrolling="no" frameborder="0" allowTransparency="true"
+                                allow="encrypted-media"></iframe>
 						</div>
 					</div>
 				</div>
@@ -965,6 +1196,7 @@
 				ga('create', 'UA-42715764-5', 'auto');
 				ga('send', 'pageview');
 			</script>
+			<script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 
 </body>
 

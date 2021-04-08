@@ -1,14 +1,14 @@
 
 <!DOCTYPE html>
 <html data-style-switcher-options="{'colorPrimary': '#0088cc', 'colorSecondary': '#0169fe', 'colorTertiary': '#005AEF', 'colorQuaternary': '#383f48'}">
-
+<!---RANCHI--->
 <head>
-
+		<!--------------------------------------------R-A-N-C-H-I--------------------------------------------------------->
 		<!-- Basic -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title>Spade Campus Ambassador Ranchi</title>	
+		<title>Ranchi Campus Ambassador </title>	
 
 		<meta name="keywords" content="HTML5 Template" />
 		<meta name="description" content="Porto - Responsive HTML5 Template">
@@ -45,6 +45,7 @@
 
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="css/event.css" type="text/css">
 		
 		<!---PULSE ANIMATION-->
     <style>
@@ -57,6 +58,141 @@
                 box-shadow: 0 0 0 25px rgba(0, 115, 255, 0);
             }
         }
+		/******************************************/
+		  /* Make the image-slider fully responsive */
+		  /******************************************/
+		  .carousel-inner img {
+			width: 120%;
+			height: 120%;
+			
+		  }
+		  /***************************/
+		  /*zoom-out-effect-imgSlider*/
+		  /***************************/
+		  .carousel-inner img{
+			  margin-top: 300px;
+			  position: relative;
+			  left: 50%;
+			  top: 50%;
+			  transform: translate(-50%, -50%);
+			  animation: zoom-out 6s linear infinite;
+		  }
+		  @keyframes zoom-out{
+			100%{
+			  width: 100%;
+			  height: 100%;
+			}
+		  }
+		  
+		  @media (max-width: 900px){
+			.carousel-inner .text-box{
+				width: 350px!important;
+			}
+			.carousel-inner .text-box h1{
+			  font-size: 40px;
+			}
+		    .carousel-inner .text-box p{
+			  font-size: 14px;
+			}
+		  }
+		  
+		  @media (max-width: 800px){
+		    .carousel-inner img{
+		      margin-top: 250px;
+			}
+			.carousel-inner .text-box{
+				width: 400px!important;
+				position: absolute;
+				top: 100px;
+				left: 100px!important;
+				
+		    }
+			.carousel-inner .text-box p{
+			  display: none;
+			}
+		  }
+		  @media (max-width: 550px){
+		    .carousel-inner img{
+			  margin-top: 100px;
+			}
+			.carousel-inner .text-box{
+			  display: none;
+			}
+			.carousel-inner .overlayy{
+			  background: rgba(0,0,0,0.1)!important;
+			}
+		  
+		    .main .m-slide{
+			  height: 300px;
+			}
+			.carousel-inner img{
+			  margin-top: 150px;
+			  
+			}
+			.main .slide .carousel-control-next, .main .slide .carousel-control-prev{
+				height: 300px;
+			}
+		  }
+		  /******************************/
+		  /*Carousel-Text-With-Animation*/
+		  /******************************/
+		  
+		  .carousel-inner .text-box{
+			width: 600px;
+			position: absolute;
+			top: 200px;
+			left: 150px;
+			color: #fff;
+			animation: textup 30s linear infinite;
+			transform: translateY(100px);
+		  }
+		  .carousel-inner .overlayy{
+		    width: 100%;
+			height: 200vh;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: rgba(0,0,0,.4);
+		  }
+		  @keyframes textup{
+			10%{
+				transform: translateY(0px);
+			}
+			100%{
+				transform: translateY(0px);
+			}
+		  }
+		  .text-box h1{
+			margin-bottom: 40px;
+			color: #ccc;
+			font-weight: bold;
+		  }
+		  .text-box p{
+			font-size: 18px;
+			line-height: 20px;
+			margin-top: 80px;
+			color: #cacdd0;
+			letter-spacing: 1px;
+			font-family: monospace;
+			font-weight: 400;
+		  }
+		  .text-box  span{
+			background: #2ba3f9;
+			height: 2px;
+			width: 100px;
+			position: absolute;
+			left: 0;
+		  }
+		  
+		
+		/*JOIN-BUTTON*/
+		  #mainNav .join-btn{
+		    margin: 25px 0 0 25px;
+			text-decoration: none;
+		  }
+		  #mainNav .join-btn a{
+			text-decoration: none;
+		  }
     </style>
 		
 		<!-- Head Libs -->
@@ -84,67 +220,40 @@
 										<div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1">
 											<nav class="collapse navbar-dark bg-dark" data-toggle="collapse">
 												<ul class="nav nav-pills" id="mainNav">
-													<li>
-														<a class="dropdown-item dropdown-toggle" href="https://www.spadeems.org/" style="color:white;">Home</a>
-												  </li>
-													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="about.html" style="color:white;">About</a>
-													</li>
-													<li>
-														<a class="dropdown-item dropdown-toggle" href="youth.html" style="color:white;">Youth</a>
-												  </li>
-													<li>
-														<a class="dropdown-item dropdown-toggle" href="membership.html" style="color:white;">Membership</a>
-												  </li>
-													<li>
-														<!-- navbar contact us -->
-														<a class="dropdown-item dropdown-toggle" href="contact-us.html" style="color:white;">Contact Us</a>
-												  </li>
-														<li class="dropdown dropdown-mega">												
-														<a class="dropdown-item dropdown-toggle" href="#" style="color:white;">City</a>
-															<ul class="dropdown-menu">															
-																<li>																
-																	<div class="dropdown-mega-content">																	
-																		<div class="row">																		
-																			<div class="col-lg-3">																			
-																				<!--span class="dropdown-mega-sub-title">Elements 1</span-->																			
-																					<ul class="dropdown-mega-sub-nav">																				
-																						<li><a href="https://www.spadeems.org/city/dehradun/" >Dehradun</a></li>											
-																						<li><a href="https://www.spadeems.org/city/delhi/" >Delhi</a></li>
-																					</ul>																		
-																			</div>																		
-																			<div class="col-lg-3">																			
-																				<!--span class="dropdown-mega-sub-title">Elements 2</span-->								
-																					<ul class="dropdown-mega-sub-nav">													
-																						<li><a href="https://www.spadeems.org/city/hyderabad/">Hyderabad</a></li>			
-																						<li><a href="https://www.spadeems.org/city/jalandhar/">Jalandhar</a></li>		
-																					</ul>																		
-																			</div>																		
-																			<div class="col-lg-3">														
-																				<!--span class="dropdown-mega-sub-title">Elements 3</span-->							
-																					<ul class="dropdown-mega-sub-nav">												
-																						<li><a href="https://www.spadeems.org/city/phagwara/">Phagwara</a></li>							
-																						<li><a href="https://www.spadeems.org/city/ranchi/">Ranchi</a></li>				
-																					</ul>																		
-																			</div>							
-																			<div class="col-lg-3">																		
-																				<!--span class="dropdown-mega-sub-title">Elements 4</span-->																			
-																					<ul class="dropdown-mega-sub-nav">																				
-																						<li><a href="https://www.spadeems.org/city/thrissur/">Thrissur</a></li>									
-																						<li><a href="https://www.spadeems.org/city/tirunelveli/">Tirunelveli</a></li>			
-																					</ul>																		
-																			</div>				
-																		</div>													
-																	</div>														
-																</li>														
+												<li>
+													<a class="active" href="../../home.html">Home</a>
+												</li>
+												<li>
+													<a href="../../about.html">About</a>
+												</li>
+												<li>
+													<a href="../../youth.html">Youth</a>
+												</li>
+												<li>
+													<a href="../../membership.html">Membership</a>
+												</li>
+												<li>
+													<!-- navbar contact us -->
+													<a href="../../contact-us.html">Contact Us</a>
+												</li>
+												<li class="dropdown dropdown-mega">												
+														<a class="dropdown-item dropdown-toggle" href="#">City</a>
+															<ul class="dropdown-menu">
+																<!--<li><a href="../bhubaneswar/index.html">Bhubaneswar</a></li>-->
+																<li><a href="../jalandhar/index.html">Jalandhar</a></li>
+																<li><a href="../phagwara/index.html">Phagwara</a></li>
+																<li><a href="../ranchi/home.html">Ranchi</a></li>
+																<li><a href="../tirunelveli/index.html">Tirunelveli</a></li>
 															</ul>
-													</li>
-													<li>
-														<button type="button" style="position: right; margin-top: 25px; " 
-														class="btn btn-primary" ><a href="https://www.spadeems.org/join/" style="color: white;" >Join Now</a></button>
-													</li>
+												</li>
+											
+												<li>
+														<button type="button" class="btn btn-primary join-btn" ><a class="typeform-share button" href="https://form.typeform.com/to/nSveM9" data-mode="popup" style="color: #fff;">
+														Join Now</a></button>
+												</li>
 												</ul>
 											</nav>
+										
 											<!-- <button type="button" style="position: right; " 
 											class="btn btn-primary">Join Now</button> -->
 										</div>
@@ -170,6 +279,92 @@
 		
 
 			<div role="main" class="main">
+				<!-----------------------------------------------------SLIDER-------------------------------------->
+				<section class="m-slide">
+					<div id="demo" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="false" style="height:100vh; ">
+
+					  <!-- Indicators -->
+					  <ul class="carousel-indicators" style="display: none;">
+						<li data-target="#demo" data-slide-to="0" class="active"></li>
+						<li data-target="#demo" data-slide-to="1"></li>
+						<li data-target="#demo" data-slide-to="2"></li>
+						<li data-target="#demo" data-slide-to="3"></li>
+						<li data-target="#demo" data-slide-to="4"></li>
+						<li data-target="#demo" data-slide-to="5"></li>
+						<li data-target="#demo" data-slide-to="6"></li>
+						<li data-target="#demo" data-slide-to="7"></li>
+						<li data-target="#demo" data-slide-to="8"></li>
+					  </ul>
+					  
+					  <!-- The slideshow -->
+					  <div class="carousel-inner">
+						
+						<div class="carousel-item active banner1">
+						  <img class="d-block" src="Images/ranchi1.jpg">
+						  <!----------<div class="overlayy"></div>
+						  <div class="text-box text-box1">
+							<h1>City Ambassador Program 2020</h1>
+							<span></span>
+							<p>The SPADE EMS City Ambassador Program is a platform for students who are passionate about programming to start and run an active programming club in their city. A SPADE EMS City Ambassador is a leader with a keen interest in starting and building a programming community.
+							</p>
+						  </div>------------>
+						</div>
+						<div class="carousel-item banner2">
+						  <img class="d-block" src="Images/ranchi2.jpg">
+						  <!----------<div class="overlayy"></div>
+						  <div class="text-box text-box1">
+							<h1>3 C's- Career, College & Corporate</h1>
+							<span></span>
+							<p>webinar on the 3 C's- Career, College & Corporate! to get more insight about Career, College and Corporate And to get exposure to brain-storming session that was full of knowledge and resources.<br>by Dr. Ankur Sodhi, Associate Director in Career Services & Corporate Relations at Upgrad.</p>
+						  </div>------------>
+						</div>
+						<div class="carousel-item banner3">
+						  <img class="d-block" src="Images/ranchi3.jpg">
+						  <!----------<div class="overlayy"></div>
+						  <div class="text-box text-box1">
+							<h1>Website Development Services</h1>
+							<span></span>
+							<p>Do something that should attract your customers!<br>SpadeEMS provides service like:<br>Web Design <br> E-Commerce Development <br> Web Engineering <br>Web Content Development.</p>
+						  </div>------------>
+						</div>
+						<div class="carousel-item banner4">
+						  <img class="d-block" src="Images/ranchi4.jpg">
+						  <!----------<div class="overlayy"></div>
+						  <div class="text-box text-box1">
+							<h1>Collaborations!!!</h1>
+							<span></span>
+							<p>Proud moment for all at SPADE, SPADE has Ink an MOU with Multinational Company Caddcentreired of working long shifts without any gain....Come and work with SPADE Jalandhar where you can make a difference !<br>
+							We will provide you with a platform to showcase your talent and will help you groom as an individual.
+							You would be working on Team projects to add value to</p>
+						  </div>------------->
+						</div>
+						<div class="carousel-item banner5">
+						  <img class="d-block" src="Images/ranchi5.jpg">
+						  <!------------<div class="overlayy"></div>
+						  <div class="text-box text-box1">
+							<h1>We Are Hiring !!!</h1>
+							<span></span>
+							<p>Tired of working long shifts without any gain....Come and work with SPADE where you can make a difference !
+							We will provide you with a platform to showcase your talent and will help you groom as an individual.</p>
+						  </div>----------------->
+						</div>
+						
+					  </div>
+					  
+					  <!-- Left and right controls -->
+					  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					  </a>
+					  <a class="carousel-control-next" href="#demo" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					  </a>
+					</div>
+
+				</section>
+				
+			
+			
+			
 				<section class="section section-concept section-no-border section-dark section-angled section-angled-reverse pt-5 m-0" id="section-concept" style="background-size: cover; background-position: center; animation-duration: 750ms; animation-delay: 300ms; animation-fill-mode: forwards;" data-plugin-lazyload data-plugin-options="{'threshold': 500}" data-original="img/landing/header_bg.jpg">
 					<div class="section-angled-layer-bottom bg-light" style="padding: 8rem 0;"></div>
 					<div class="container pt-5 mt-5">
@@ -203,7 +398,8 @@
 						</div>
 					</div>
 				</section>
-
+				
+	
 				<section id="intro" class="section section-no-border section-angled bg-light pt-0 pb-5 m-0">
 					<div class="section-angled-layer-bottom section-angled-layer-increase-angle bg-color-light-scale-1" style="padding: 21rem 0;"></div>
 					<div class="container pb-5" style="min-height: 1000px;">
@@ -256,11 +452,78 @@
 						
 					</div>
 				</section>
+	
+<!--	
+	<section id="events">
+		<div class="leftbox">
+			<div class="content">
+				<h1>
+					Events And Shows
+				</h1>
+				<p>
+					SPADE has organized various successful events and many more events to come by which will give a chance to learn everything new everyday.<br>
+					As it is rightly said "Life is an Event, Make it  Memorable" and every moment should be a new experience with this. SPADE promise to give you a new learning experience through their events where you  will get the  chance to learn something  new everyday.<br>
+					SPADE has successfully organized various events and many more events to come by.
+				</p>
+			</div>
+		</div>
+		<div class="events">
+			<ul>
+				<li>
+					<div class="time">
+						<h2>25 <br> <span>OCTOBER</span></h2>
+					</div>
+					<div class="details">
+						<h3>Where does it come from</h3>
+						<p>
+							Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything.
+
+						</p>
+						<a>View Details</a>
+					</div>
+					<div style="clear: both;"></div>
+				</li>
+				<li>
+					<div class="time">
+						<h2>25 <br> <span>OCTOBER</span></h2>
+					</div>
+					<div class="details">
+						<h3>Where does it come from</h3>
+						<p>
+							Music gives a soul to the universe, wings to the mind, flight to the imagination and life to everything.
+
+						</p>
+						<a>View Details</a>
+					</div>
+					<div style="clear: both;"></div>
+				</li>
+				<li>
+					<div class="time">
+						<h2>25 <br> <span>OCTOBER</span></h2>
+					</div>
+					<div class="details">
+						<h3>Where does it come from</h3>
+						<p>
+						Spade ki Pathshala is back with a musical blockbuster, now to let you sing and dance in the tunes of Sharmishtha Saha aka DJ  	Mishti, a Dentist cum DJ!
+
+						</p>
+						<a>View Details</a>
+					</div>
+					<div style="clear: both;"></div>
+				</li>
+				
+			</ul>
+		</div>
+	</section>
+	<br /><br />--><br />
+
+	
+	
 				<section id="support" class="section section-angled bg-light border-0 m-0 position-relative z-index-3 pt-0">
 					<div class="container pb-5 mb-5">
 						<div class="row align-items-center mb-6">
 							<div class="col-lg-6 pr-xl-5 mb-5 mb-lg-0">
-								<h2 class="font-weight-bold text-9 mb-1">Our Phagwara Ambassador</h2><br>			
+								<h2 class="font-weight-bold text-9 mb-1">Our Ranchi Ambassador</h2><br>			
 								<div class="d-flex align-items-center border border-top-0 border-right-0 border-left-0 pb-4 mb-4">
 									<i class="fa fa-check text-color-primary bg-light rounded-circle box-shadow-4 p-2 mr-3"></i>
 									<p class="mb-0"><b class="text-color-dark">Name -</b>Ruhi Ghosh</p>
@@ -623,6 +886,7 @@ compassion, some humor, and some style”</p>
 			ga('create', 'UA-42715764-5', 'auto');
 			ga('send', 'pageview');
 		</script>
+		<script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 
 	</body>
 
