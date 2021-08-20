@@ -3,6 +3,8 @@ Name: 			theme.css
 Written by: 	Okler Themes - (http://www.okler.net)
 Theme Version:	8.0.0
 */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Libre+Franklin&family=Slabo+27px&display=swap');
 html {
 	direction: ltr;
 	overflow-x: hidden;
@@ -4724,7 +4726,8 @@ h6 .inverted {
 }
 
 .negative-ls-05 {
-	letter-spacing: -0.05em;
+	letter-spacing: 1px;
+	color:black;
 }
 
 .negative-ls-1 {
@@ -4795,7 +4798,13 @@ h6 .inverted {
 }
 
 .text-9 {
-	font-size: 2.50em !important;
+	font-size: 2.4rem !important;
+	
+	font-weight:600;
+	font-family: 'IBM Plex Serif';
+	word: spacing 2px;
+	letter-spacing:1px;
+	
 }
 
 .text-10 {
@@ -4815,7 +4824,7 @@ h6 .inverted {
 }
 
 .text-14 {
-	font-size: 4.5em !important;
+	font-size: 4em !important;
 }
 
 .text-15 {
@@ -5072,7 +5081,12 @@ h6 .inverted {
 
 .text-1rem {
 	font-size: 16px !important;
-	font-size: 1rem !important;
+	font-size: 1.15rem !important;
+	width: 50%;
+    float: right;
+    text-align: left;
+	padding-left:5rem;
+	font-family:sans-serif;
 }
 
 /* Line Height */
@@ -5664,6 +5678,7 @@ html.dark .text-muted {
 .font-weight-semibold,
 .font-weight-semi-bold {
 	font-weight: 600 !important;
+	
 }
 
 .font-weight-bold {
@@ -5672,7 +5687,8 @@ html.dark .text-muted {
 
 .font-weight-extrabold,
 .font-weight-extra-bold {
-	font-weight: 800 !important;
+	font-weight: 600 !important;
+	color: #007bff;
 }
 
 .font-weight-black {
@@ -7374,4 +7390,68 @@ html.gap-outside .pin-wrapper .sticky-wrapper.sticky-effect-active .sticky-body 
 html.gap-outside .pin-wrapper .sticky-wrapper.sticky-effect-active .sticky-body .container-fluid {
 	padding-left: 25px;
 	padding-right: 25px;
+}
+.mainaboutsections{
+
+	display:flex;
+	flex-direction: row;
+   
+	width:100%;
+}
+.adding{
+   width:50%;
+   
+}
+.aboutpara1 , .aboutpara2{
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+
+@media only screen and (min-width:850px) and (max-width:1200px){
+	.mb-5, .my-5 {
+		margin-bottom: 0rem!important;
+	}
+	.text-1rem {
+		font-size: 0.9rem !important;
+		padding-left: 1.75rem;
+		line-height:1.41rem;
+	}
+	.aboutpara1 , .aboutpara2{
+		font-size: 1.12rem;
+		line-height: 1.41rem;
+	}
+	
+} 
+
+
+.pb-4, .py-4 {
+    padding-bottom: 0rem!important;
+}
+
+@media only screen and (min-width:280px) and (max-width:849px){
+	.mainaboutsections{
+
+		display:flex;
+		flex-direction: column;
+		width:100%;
+	}
+	.adding {
+		width: 100%;
+	}
+	.text-1rem{   width: 100%;
+		padding-left: 1rem;
+	}
+	.aboutpara1, .aboutpara2 {
+		font-size: 1.2rem;
+		line-height: 2rem;
+		padding-top: 1rem;}
+}
+
+
+@media only screen and (min-width:850px) and (max-width:988px){
+	.aboutpara1, .aboutpara2 {
+		font-size: 0.9rem;
+		line-height: 1.2rem;
+		width: 120%;
+	}
 }
