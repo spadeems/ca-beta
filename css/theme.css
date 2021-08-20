@@ -5867,7 +5867,14 @@ html.dark .text-muted {
 	position: relative;
 	clear: both;
 }
-
+.footer-img{
+   max-width: 50%;
+   padding-top: 30px;
+}
+.footer-links{
+	display: flex;
+	justify-content: center;
+}
 #footer .footer-ribbon {
 	background: #999;
 	position: absolute;
