@@ -106,17 +106,17 @@ export default ({
                 <DividerText>Or Sign up with your e-mail</DividerText>
               </DividerTextContainer> */}
               <Form>
+                <Input type="text" placeholder="Name" />
                 <Input type="email" placeholder="Email" />
-                <Input type="password" placeholder="Password" />
-                <Input type="password" placeholder="Phone Number" />
-                <Input type="password" placeholder="College Name" />
-                <Input type="password" placeholder="Year" />
+                <Input type="number" placeholder="Contact No." />
+                <Input type="text" placeholder="Institute Name" />
+                <Input type="number" placeholder="Year" />
                 <SubmitButton type="submit">
                   <SubmitButtonIcon className="icon" />
                   <span className="text">{submitButtonText}</span>
                 </SubmitButton>
-                <p tw="mt-6 text-xs text-white text-center">
-                  I agree to abide by treact's{" "}
+                <p tw="mt-6 text-xs text-gray-600 text-center">
+                  I agree to abide by SpadesEMS{" "}
                   <a href={tosUrl} tw="border-b border-gray-500 border-dotted">
                     Terms of Service
                   </a>{" "}
@@ -126,12 +126,12 @@ export default ({
                   </a>
                 </p>
 
-                <p tw="mt-8 text-sm text-white text-center">
+                {/*<p tw="mt-8 text-sm text-white text-center">
                   Already have an account?{" "}
                   <a href={signInUrl} tw="border-b border-gray-500 border-dotted">
                     Sign In
                   </a>
-                </p>
+                </p>*/}
               </Form>
             </FormContainer>
           </MainContent>
