@@ -10,7 +10,7 @@ import MainFeature from "./TwoColWithButton.js";
 import Testimonial from "./ThreeColumnWithProfileImage.js";
 // import DownloadApp from "components/cta/DownloadApp.js";
 import Footer from "./FiveColumnWithInputForm.js";
-
+import Signup from "./Signup.js";
 // import chefIconImageSrc from "images/chef-icon.svg";
 // import celebrationIconImageSrc from "images/celebration-icon.svg";
 // import shopIconImageSrc from "images/shop-icon.svg";
@@ -76,7 +76,7 @@ export default () => {
           </Description>
         }
         buttonRounded={true}
-        textOnLeft={true}
+        textOnLeft={false}
         primaryButtonText="Learn More"
         imageSrc={
           "https://smartknower.com/images/blog-main-page/reasons.png"
@@ -111,7 +111,7 @@ export default () => {
         imageDecoratorBlob={false}
         imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
       />
-    
+      <Signup />
       <Testimonial
         subheading=""
         heading={<>Our Campus Ambassador</>}
