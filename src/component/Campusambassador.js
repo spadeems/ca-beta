@@ -10,6 +10,7 @@ import MainFeature from "./TwoColWithButton.js";
 import Testimonial from "./ThreeColumnWithProfileImage.js";
 // import DownloadApp from "components/cta/DownloadApp.js";
 import Footer from "./FiveColumnWithInputForm.js";
+import headerimage from "../images/headerimage.png"
 import Signup from "./Signup.js";
 
 import {
@@ -115,7 +116,7 @@ export default () => {
         textOnLeft={true}
         primaryButtonText="Learn More"
         imageSrc={
-          "https://www.verzeo.com/new/images/newblogs/good-ca.png"
+          headerimage
         }
         imageCss={imageCss}
         imageDecoratorBlob={false}
