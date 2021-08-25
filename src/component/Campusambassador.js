@@ -11,6 +11,7 @@ import Testimonial from "./ThreeColumnWithProfileImage.js";
 // import DownloadApp from "components/cta/DownloadApp.js";
 import Footer from "./FiveColumnWithInputForm.js";
 import Signup from "./Signup.js";
+import process from "../images/process.png";
 // import chefIconImageSrc from "images/chef-icon.svg";
 // import celebrationIconImageSrc from "images/celebration-icon.svg";
 // import shopIconImageSrc from "images/shop-icon.svg";
@@ -20,12 +21,29 @@ export default () => {
   const HighlightedText = tw.span`bg-primary-500 text-gray-100 px-4 transform -skew-x-12 inline-block`;
   const HighlightedTextInverse = tw.span`bg-gray-100 text-primary-500 px-4 transform -skew-x-12 inline-block`;
   const Description = tw.span`inline-block mt-8`;
-  const imageCss = tw`rounded-4xl`;
+  const imageCss = tw`rounded-6xl `;
   return (
     <AnimationRevealPage>
       <Hero
         heading={<>Campus Ambassador </>}
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        description={
+          <Description>
+            The Campus Ambassador Program at Spade Ems wants people of great interest, super 
+            energetic, thrilled who can take the initiative and make it a successful voyage. The 
+            members should be a part of college community, club, event, and activities. Moreover, 
+            he/she has led an event in the past and active in college participation.
+            Through this highly selective Program, you’ll gain work experience and get a chance 
+            to earn also. Imagine how its going to be helpful for you in shaping your career and 
+            become the next great leader.
+            <br/>
+            <br/>
+            If you feel you have the qualities of becoming Spade Ems campus ambassador, join in 
+            and be a part of family. We assure you of great work experience, learning, motivation
+            and growth. 
+            <br/>
+            <br/>
+            Hurry, Join in Now
+          </Description>}
         imageSrc="https://amigoz.app/static/amigoz/images/college_ambassador/college_ambassador.svg"
         imageCss={imageCss}
         imageDecoratorBlob={false}
@@ -38,74 +56,77 @@ export default () => {
           <>
             About Campus Ambassador Process
           </>
+          
         }
-        description={
-          <Description>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-            <br />
-            <br />
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </Description>
-        }
+        description={<Description></Description>}
+        
         buttonRounded={true}
-        textOnLeft={true}
-        primaryButtonText="Learn More"
+        textOnLeft={false}
+      //  primaryButtonText="Learn More"
         imageSrc={
-          "https://www.shoutlo.com/uploads/articles/header-img-shoutlo-campus-ambassador-program1.jpg"
+          process
         }
         imageCss={imageCss}
         imageDecoratorBlob={false}
         imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
       />
     
-         <MainFeature
+       <MainFeature
         
         heading={
           <>
-           What you will learn?
+            Responsibilities of a campus ambassador
           </>
         }
         description={
           <Description>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-            <br />
-            <br />
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <div className="responsibilty">
+                 •  Promote our services in your college and try to target students  who are interested in web 
+                 development, graphic designing,  marketing, etc.<br/><br/>
+                 • Publicise by displaying posters on notice boards, sharing e-posters on WhatsApp, 
+                 Facebook, etc., circulating emails, etc.<br/><br/>
+                 •  Submit weekly reports.<br/><br/>
+                 •  Conduct workshops, online events, etc.<br/><br/>
+                 • Represent us in the placement cells of your college.<br/><br/>
+                 • Associate Spade Ems with various college societies and fest department.<br/> <br/>
+            </div>
+            
+            
           </Description>
         }
         buttonRounded={true}
-        textOnLeft={false}
+        textOnLeft={true}
         primaryButtonText="Learn More"
         imageSrc={
-          "https://smartknower.com/images/blog-main-page/reasons.png"
+          "https://www.verzeo.com/new/images/newblogs/good-ca.png"
         }
         imageCss={imageCss}
         imageDecoratorBlob={false}
         imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
       />
-       <MainFeature
+      <MainFeature
         
         heading={
           <>
-            Responsibilities of a campus ambassadar
+           What you will get?
           </>
         }
         description={
           <Description>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-            <br />
-            <br />
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <li>Providing goodies like T-shirt, Bag, Cap, Diary, Pen drive, Stickers and so on.</li>
+            <li>Earn great Cash rewards.</li>
+            <li>Student referral rewards</li>
+            <li>Work Experience Certificate</li> 
+            <li>Opportunity to interact and network with industry experts through our various events</li>
+            <li>Opportunity to become a part of us (PPO)</li>
+            <li>Huge cash incentives on completing targets</li>
           </Description>
         }
         buttonRounded={true}
         textOnLeft={false}
-        primaryButtonText="Learn More"
+        // primaryButtonText="Learn More".
         imageSrc={
-          "https://www.verzeo.com/new/images/newblogs/good-ca.png"
+          "https://smartknower.com/images/blog-main-page/reasons.png"
         }
         imageCss={imageCss}
         imageDecoratorBlob={false}

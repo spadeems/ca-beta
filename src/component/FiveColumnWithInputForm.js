@@ -52,8 +52,8 @@ export default () => {
       <Content>
         <SixColumns>
           <Column>
-            <ColumnHeading>Main</ColumnHeading>
-            <LinkList>
+            <ColumnHeading>About Us</ColumnHeading>
+            {/* <LinkList>
               <LinkListItem>
                 <Link href="#">Blog</Link>
               </LinkListItem>
@@ -66,45 +66,12 @@ export default () => {
               <LinkListItem>
                 <Link href="#">About Us</Link>
               </LinkListItem>
-            </LinkList>
+            </LinkList> */}
           </Column>
+              
           <Column>
-            <ColumnHeading>Product</ColumnHeading>
-            <LinkList>
-              <LinkListItem>
-                <Link href="#">Log In</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Personal</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Business</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Team</Link>
-              </LinkListItem>
-            </LinkList>
-          </Column>
-          <Column>
-            <ColumnHeading>Press</ColumnHeading>
-            <LinkList>
-              <LinkListItem>
-                <Link href="#">Logos</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Events</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Stories</Link>
-              </LinkListItem>
-              <LinkListItem>
-                <Link href="#">Office</Link>
-              </LinkListItem>
-            </LinkList>
-          </Column>
-          <Column>
-            <ColumnHeading>Legal</ColumnHeading>
-            <LinkList>
+          <ColumnHeading>Support</ColumnHeading>
+               {/* <LinkList>
               <LinkListItem>
                 <Link href="#">GDPR</Link>
               </LinkListItem>
@@ -117,11 +84,63 @@ export default () => {
               <LinkListItem>
                 <Link href="#">Disclaimer</Link>
               </LinkListItem>
-            </LinkList>
+            </LinkList> */}
           </Column>
-          <SubscribeNewsletterColumn>
+          
+          <Column>
+            <ColumnHeading>FAQs</ColumnHeading>
+            {/* <LinkList>
+              <LinkListItem>
+                <Link href="#">Log In</Link>
+              </LinkListItem>
+              <LinkListItem>
+                <Link href="#">Personal</Link>
+              </LinkListItem>
+              <LinkListItem>
+                <Link href="#">Business</Link>
+              </LinkListItem>
+              <LinkListItem>
+                <Link href="#">Team</Link>
+              </LinkListItem>
+            </LinkList> */}
+          </Column>
+          <Column>
+            <ColumnHeading>Privacy Policy</ColumnHeading>
+            {/* <LinkList>
+              <LinkListItem>
+                <Link href="#">Logos</Link>
+              </LinkListItem>
+              <LinkListItem>
+                <Link href="#">Events</Link>
+              </LinkListItem>
+              <LinkListItem>
+                <Link href="#">Stories</Link>
+              </LinkListItem>
+              <LinkListItem>
+                <Link href="#">Office</Link>
+              </LinkListItem>
+            </LinkList> */}
+          </Column>
+          <Column>
+            <ColumnHeading>Terms of Service</ColumnHeading>
+            {/* <LinkList>
+              <LinkListItem>
+                <Link href="#">GDPR</Link>
+              </LinkListItem>
+              <LinkListItem>
+                <Link href="#">Privacy Policy</Link>
+              </LinkListItem>
+              <LinkListItem>
+                <Link href="#">Terms of Service</Link>
+              </LinkListItem>
+              <LinkListItem>
+                <Link href="#">Disclaimer</Link>
+              </LinkListItem>
+            </LinkList> */}
+          </Column>
+          {/* <SubscribeNewsletterColumn>
             <SubscribeNewsletterContainer>
-              <ColumnHeading>Subscribe to our Newsletter</ColumnHeading>
+              <ColumnHeading>Support</ColumnHeading>
               <SubscribeText>
                 We deliver high quality blog posts written by professionals weekly. And we promise no spam.
               </SubscribeText>
@@ -130,7 +149,7 @@ export default () => {
                 <SubscribeButton type="submit">Subscribe</SubscribeButton>
               </SubscribeForm>
             </SubscribeNewsletterContainer>
-          </SubscribeNewsletterColumn>
+          </SubscribeNewsletterColumn> */}
         </SixColumns>
         <Divider />
         <ThreeColRow>
@@ -140,10 +159,10 @@ export default () => {
           </LogoContainer>
           <CopywrightNotice> Copyright © 2021 SpadeEMS. All Rights Reserved.</CopywrightNotice>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
+            <SocialLink href="https://www.facebook.com/spadeems29">
               <FacebookIcon />
             </SocialLink>
-            <SocialLink href="https://twitter.com">
+            <SocialLink href="https://twitter.com/EmsSpade/">
               <TwitterIcon />
             </SocialLink>
             <SocialLink href="https://youtube.com">
