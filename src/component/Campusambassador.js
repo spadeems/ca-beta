@@ -36,24 +36,10 @@ export default () => {
     <Router>
    
       <Hero
-        heading={<>Campus Ambassador </>}
+        heading={<> SPADE <br/> Campus Ambassador </>}
         description={
           <Description>
-            The Campus Ambassador Program at Spade Ems wants people of great interest, super 
-            energetic, thrilled who can take the initiative and make it a successful voyage. The 
-            members should be a part of college community, club, event, and activities. Moreover, 
-            he/she has led an event in the past and active in college participation.
-            Through this highly selective Program, you’ll gain work experience and get a chance 
-            to earn also. Imagine how its going to be helpful for you in shaping your career and 
-            become the next great leader.
-            <br/>
-            <br/>
-            If you feel you have the qualities of becoming Spade Ems campus ambassador, join in 
-            and be a part of family. We assure you of great work experience, learning, motivation
-            and growth. 
-            <br/>
-            <br/>
-            Hurry, Join in Now
+            
           </Description>}
         imageSrc="https://amigoz.app/static/amigoz/images/college_ambassador/college_ambassador.svg"
         imageCss={imageCss}
@@ -70,11 +56,28 @@ export default () => {
           </>
           
         }
-        description={<Description></Description>}
+        description={
+          <Description>
+          The Campus Ambassador Program at Spade Ems wants people of great interest, super 
+          energetic, thrilled who can take the initiative and make it a successful voyage. The 
+          members should be a part of college community, club, event, and activities. Moreover, 
+          he/she has led an event in the past and active in college participation.
+          Through this highly selective Program, you’ll gain work experience and get a chance 
+          to earn also. Imagine how its going to be helpful for you in shaping your career and 
+          become the next great leader.
+          <br/>
+          <br/>
+          If you feel you have the qualities of becoming Spade Ems campus ambassador, join in 
+          and be a part of family. We assure you of great work experience, learning, motivation
+          and growth. 
+          <br/>
+          <br/>
+          Hurry, Join in Now
+        </Description>}
         
         buttonRounded={true}
         textOnLeft={false}
-      //  primaryButtonText="Learn More"
+        primaryButtonText="Learn More"
         imageSrc={
           process
         }
