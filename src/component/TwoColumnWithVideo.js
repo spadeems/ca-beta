@@ -4,7 +4,7 @@ import tw from "twin.macro";
 //eslint-disable-next-line
 import { css } from "styled-components/macro";
 
-import Header from "./light.js";
+import Header from "./Navbar.js";
 
 import ReactModalAdapter from "../helpers/ReactModalAdapter.js";
 // import ResponsiveVideoEmbed from "../../helpers/ResponsiveVideoEmbed.js";
