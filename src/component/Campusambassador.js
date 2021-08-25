@@ -11,6 +11,12 @@ import Testimonial from "./ThreeColumnWithProfileImage.js";
 // import DownloadApp from "components/cta/DownloadApp.js";
 import Footer from "./FiveColumnWithInputForm.js";
 import Signup from "./Signup.js";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 // import chefIconImageSrc from "images/chef-icon.svg";
 // import celebrationIconImageSrc from "images/celebration-icon.svg";
 // import shopIconImageSrc from "images/shop-icon.svg";
@@ -23,6 +29,8 @@ export default () => {
   const imageCss = tw`rounded-4xl`;
   return (
     <AnimationRevealPage>
+    <Router>
+   
       <Hero
         heading={<>Campus Ambassador </>}
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -32,9 +40,10 @@ export default () => {
         primaryButtonText="Apply Now"
         watchVideoButtonText="Meet The Chefs"
       />
-      <MainFeature
-        
-        heading={
+   
+          <MainFeature
+            
+            heading={
           <>
             About Campus Ambassador Process
           </>
@@ -56,10 +65,10 @@ export default () => {
         }
         imageCss={imageCss}
         imageDecoratorBlob={false}
-        imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
-      />
-    
-         <MainFeature
+            imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
+          />
+  
+      <MainFeature
         
         heading={
           <>
@@ -85,6 +94,12 @@ export default () => {
         imageDecoratorBlob={false}
         imageDecoratorBlobCss={tw`left-1/2 -translate-x-1/2 md:w-32 md:h-32 opacity-25`}
       />
+     
+    
+   
+    
+    
+        
        <MainFeature
         
         heading={
@@ -102,7 +117,7 @@ export default () => {
           </Description>
         }
         buttonRounded={true}
-        textOnLeft={false}
+        textOnLeft={true}
         primaryButtonText="Learn More"
         imageSrc={
           "https://www.verzeo.com/new/images/newblogs/good-ca.png"
@@ -118,6 +133,8 @@ export default () => {
       />
      
       <Footer />
+    </Router>
+    
     </AnimationRevealPage>
   );
 }

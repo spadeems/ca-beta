@@ -1,8 +1,13 @@
 module.exports = {
   prefix: '',
-  important: false,
+  important: true,
   separator: ':',
   theme: {
+    extend: {
+      colors: {
+        'black': '#fff',
+      }
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -13,7 +18,7 @@ module.exports = {
     colors: {
       transparent: 'transparent',
 
-      black: '#000',
+      black: '#fff',
       white: '#fff',
 
       primary: {

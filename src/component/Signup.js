@@ -4,7 +4,7 @@ import { Container as ContainerBase } from "component/misc/Layouts";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import illustration from "../images/backgroundimg.jpg";
+import illustration from "../images/bg-img2.jpg";
 // import logo from "../images/logo.svg";
 import spadeemslogo2 from "../images/spadeemslogo2.png";
 import googleIconImageSrc from "../images/google-icon.png";
@@ -13,7 +13,7 @@ import { ReactComponent as SignUpIcon } from "feather-icons/dist/icons/user-plus
 
 const Container = tw(ContainerBase)`min-h-screen text-white font-medium flex justify-center -m-8`;
 const Content = styled.div`
-${tw`max-w-screen-xl bg-cover bg-center bg-no-repeat m-0  bg-white text-gray-900 shadow sm:rounded-lg flex justify-center flex-1 ml-20`}
+${tw`max-w-screen-xl bg-cover bg-center bg-no-repeat m-0  bg-white text-gray-900 shadow sm:rounded-lg flex justify-center flex-1 `}
 ${props => `background-image: url("${props.imageSrc}");`}
 `; 
 tw.div`max-w-screen-xl  m-0 sm:mx-20 sm:my-16 bg-white text-gray-900 shadow sm:rounded-lg flex justify-center flex-1`;
@@ -55,7 +55,7 @@ const SubmitButton = styled.button`
     ${tw`ml-3`}
   }
 `;
-const IllustrationContainer = tw.div`sm:rounded-r-lg flex-1 bg-purple-100 text-center hidden lg:flex justify-center`;
+const IllustrationContainer = tw.div`sm:rounded-r-lg flex-1  text-center hidden lg:flex justify-center`;
 const IllustrationImage = styled.div`
   ${props => `background-image: url("${props.imageSrc}");`}
   ${tw` w-full max-w-lg bg-cover bg-center bg-no-repeat`}
@@ -86,6 +86,10 @@ export default ({
 
   
       <Content imageSrc={illustrationImageSrc}>
+      <IllustrationContainer>
+          {/* <IllustrationImage imageSrc={illustrationImageSrc} /> */}
+         
+        </IllustrationContainer>
         <MainContainer>
           <LogoLink href={logoLinkUrl}>
             <LogoImage src={spadeemslogo2} />
@@ -116,7 +120,7 @@ export default ({
                   <SubmitButtonIcon className="icon" />
                   <span className="text">{submitButtonText}</span>
                 </SubmitButton>
-                <p tw="mt-6 text-xs text-gray-600 text-center">
+                <p tw="mt-6 text-xs text-white text-center">
                   I agree to abide by SpadesEMS{" "}
                   <a href={tosUrl} tw="border-b border-gray-500 border-dotted">
                     Terms of Service
@@ -137,10 +141,7 @@ export default ({
             </FormContainer>
           </MainContent>
         </MainContainer>
-        {/* <IllustrationContainer>
-          <IllustrationImage imageSrc={illustrationImageSrc} />
-         
-        </IllustrationContainer> */}
+        
       </Content>
   
 );
