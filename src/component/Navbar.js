@@ -4,15 +4,18 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 
+import spadeemslogo from "../images/spadeemslogo.png";
+
 import useAnimatedNavToggler from "../helpers/useAnimatedNavToggler.js";
-import './navbar.css'
-import logo from "../images/spadeemslogo.png";
+
+// import logo from "../images/logo.svg";
+
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 
 const Header = tw.header`
   flex justify-between items-center
-  max-w-screen-xl mx-auto
+  max-w-screen-xl mx-auto p-4
 `;
 
 export const NavLinks = tw.div`inline-block`;
@@ -34,10 +37,11 @@ export const PrimaryLink = tw(NavLink)`
 `;
 
 export const LogoLink = styled(NavLink)`
-  ${tw`flex items-center font-black border-b-0 text-2xl! ml-0!`};
+
+  ${tw`flex items-center font-black border-b-0 text-2xl! ml-0! `};
 
   img {
-    ${tw`w-24 mr-3`}
+    ${tw`w-40 mr-3`}
   }
 `;
 
@@ -72,13 +76,14 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    */
   const defaultLinks = [
     <NavLinks key={1}>
+
+      <NavLink href="/#">Home</NavLink>
       <NavLink href="/#">About</NavLink>
       <NavLink href="/#">Blog</NavLink>
-      <NavLink href="/#">Pricing</NavLink>
       <NavLink href="/#">Contact Us</NavLink>
-      <NavLink href="/#" tw="lg:ml-12!">
+      {/* <NavLink href="/#" tw="lg:ml-12!">
         Login
-      </NavLink>
+      </NavLink> */}
       <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#">Register Now</PrimaryLink>
     </NavLinks>
   ];
@@ -88,8 +93,8 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
 
   const defaultLogoLink = (
     <LogoLink href="/">
-      <img src={logo} alt="logo" />
-    
+
+      <img src={spadeemslogo} alt="logo" />
     </LogoLink>
   );
 
@@ -145,14 +150,10 @@ const collapseBreakPointCssMap = {
   }
 };
 // import React from 'react';
-// import Spadelogo from '../images/Spadeemslogo3.png';
-// import {
-//     BrowserRouter as Router,
-//     Switch,
-//     Route,
-//     Link
-//   } from "react-router-dom";
-//  import './navbar.css'
+
+// import spadeemslogo from "../images/spadeemslogo.png";
+// import './navbar.css'
+
 
 // const Navbar = () => {
 //     const showsidemenu = (e)=>{
@@ -160,31 +161,25 @@ const collapseBreakPointCssMap = {
 //       N3menulist.classList.toggle('showsidebar');
 //     }
 //     return (
-//         <Router>
-//            <div className="Navbar3">
+
+//         <div className="Navbar3">
 //            <div className="N3menu">
 //                <div class="hamb" onClick={showsidemenu}>☰</div>
-//                <div className="N3logo"><img src={Spadelogo} alt="logo" className="mainspadelogo"></img></div>
+//                <div className="N3logo"><img src={spadeemslogo} alt="logo" className="mainspadelogo"></img></div>
 //                <div className="N3menulist">
-//                    <Link to="/">
-//                      <div>Home</div>
-//                    </Link>
-//                    <Link to="/about">
-//                      <div>About</div>
-//                    </Link>
-//                    <Link to="/contact">
-//                      <div>Contact</div>
-//                    </Link>
-//                    <Link to="/blog">
-//                      <div>Blog</div>
-//                    </Link>   </div>
+//                <div>Home</div>
+//                <div>About</div>
+//                <div>Contact</div>
+//                <div>Blog</div>
+//                </div>
+
 //            </div>
 //            <div className="N3btns">
 //                <div className="registerbtn"> Register now</div>
 //            </div>
 //         </div>
-//         </Router>
-       
+
+
 //     )
 // }
 

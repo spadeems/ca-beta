@@ -70,9 +70,9 @@ export default ({
              
              <Heading>{heading}</Heading>
              <Description>{description}</Description>
-             <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>
+             {/* <PrimaryButton buttonRounded={buttonRounded} as="a" href={primaryButtonUrl}>w
                {primaryButtonText}
-             </PrimaryButton>
+             </PrimaryButton> */}
            </TextContent>
          </TextColumn>
        <ImageColumn>
