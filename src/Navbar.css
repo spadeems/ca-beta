@@ -1,9 +1,18 @@
+html,body{
+    overflow-x: hidden;
+}
 .Navbar3{
     width:98%;
     display:inline-flex;
     justify-content: space-between;
     padding:2rem 0.5rem;
     overflow-x: hidden;
+}
+.mainspadelogo{
+    height:auto;
+    width:3rem;
+    padding-left: 1rem;
+    
 }
 .N3menu{
     display:inline-flex;
@@ -65,9 +74,15 @@
 @media screen and (min-width:850px) and (max-width:1000px){
     .Navbar3{
         padding: 1.5rem 2.5rem;
+        width:92%;
     }
-    .N3logo {
-        font-size: 1.8rem;}
+    .N3logo{
+        font-size: 1.8rem;
+    }
+    .mainspadelogo{
+            width: 2.8rem;
+            padding-left: 0rem;
+    }
   .N3menu{
     width:45%;
   }
@@ -75,6 +90,7 @@
 @media screen and (min-width:500px) and (max-width:850px){
     .Navbar3{
         padding: 1rem 2.2rem;
+        width:92%;
     }
     .N3menu{
         width:50%;
@@ -89,10 +105,18 @@
     .N3menulist{
         font-size: 0.8rem;
     }
+    .mainspadelogo {
+        height: auto;
+        width: 2.5rem;
+        padding-left: 0rem;
+    }
 }
 @media screen and (min-width:500px) and (max-width:600px){
+    .Navbar3{
+        width:90%;
+    }
     .N3menu{
-        width:60%;
+        width:60;
     }
     .registerbtn{
         padding: 0.1rem 0.4rem;
@@ -105,6 +129,9 @@
     .N3menulist{
             font-size: 0.7rem;
     }
+    .mainspadelogo {
+        height: auto;
+        width: 2.6rem;}
 }
 
 @media screen and (min-width:280px) and (max-width:500px){
@@ -120,7 +147,11 @@
     }
     .Navbar3{
         padding: 0.5rem 1rem;
+        width:92%;
     }
+    .mainspadelogo {
+        height: auto;
+        width: 2.5rem;}
     .N3menulist {
         position: absolute;
         display:flex;

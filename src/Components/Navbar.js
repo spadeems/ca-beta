@@ -1,4 +1,5 @@
-import React from 'react'
+ import React from 'react';
+ import Spadelogo from '../Spadelogo.png';
 
 const Navbar = () => {
     const showsidemenu = (e)=>{
@@ -9,7 +10,7 @@ const Navbar = () => {
         <div className="Navbar3">
            <div className="N3menu">
                <div class="hamb" onClick={showsidemenu}>☰</div>
-               <div className="N3logo"><i class="fab fa-slack" aria-hidden="true"></i></div>
+               <div className="N3logo"><img src={Spadelogo} alt="logo" className="mainspadelogo"></img></div>
                <div className="N3menulist">
                <div>Home</div>
                <div>About</div>
