@@ -79,7 +79,7 @@ export default () => {
         textOnLeft={false}
         primaryButtonText="Learn More"
         imageSrc={
-          process
+          headerimage
         }
         imageCss={imageCss}
         imageDecoratorBlob={false}
