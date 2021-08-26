@@ -135,7 +135,7 @@ export default () => {
         }
         description={
           <Description>
-            <li>Providing goodies like T-shirt, Bag, Cap, Diary, Pen drive, Stickers and so on.</li>
+            <li><span>Providing goodies like T-shirt, Bag, Cap, Diary, Pen drive, Stickers and so on.</span></li>
             <li>Earn great Cash rewards.</li>
             <li>Student referral rewards</li>
             <li>Work Experience Certificate</li> 
