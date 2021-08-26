@@ -10,6 +10,7 @@ import MainFeature from "./TwoColWithButton.js";
 import Testimonial from "./ThreeColumnWithProfileImage.js";
 // import DownloadApp from "components/cta/DownloadApp.js";
 import Footer from "./FiveColumnWithInputForm.js";
+import headerimage from "../images/headerimage.png"
 import Signup from "./Signup.js";
 
 import {
@@ -36,24 +37,9 @@ export default () => {
     <Router>
    
       <Hero
-        heading={<>Campus Ambassador </>}
+        heading={<> SPADE <br/> Campus Ambassador </>}
         description={
-          <Description>
-            The Campus Ambassador Program at Spade Ems wants people of great interest, super 
-            energetic, thrilled who can take the initiative and make it a successful voyage. The 
-            members should be a part of college community, club, event, and activities. Moreover, 
-            he/she has led an event in the past and active in college participation.
-            Through this highly selective Program, you’ll gain work experience and get a chance 
-            to earn also. Imagine how its going to be helpful for you in shaping your career and 
-            become the next great leader.
-            <br/>
-            <br/>
-            If you feel you have the qualities of becoming Spade Ems campus ambassador, join in 
-            and be a part of family. We assure you of great work experience, learning, motivation
-            and growth. 
-            <br/>
-            <br/>
-            Hurry, Join in Now
+          <Description> 
           </Description>}
         imageSrc="https://amigoz.app/static/amigoz/images/college_ambassador/college_ambassador.svg"
         imageCss={imageCss}
@@ -66,17 +52,34 @@ export default () => {
             
             heading={
           <>
-            About Campus Ambassador Process
+            About Campus Ambassador Program
           </>
           
         }
-        description={<Description></Description>}
+        description={
+          <Description>
+          The Campus Ambassador Program at Spade Ems wants people of great interest, super 
+          energetic, thrilled who can take the initiative and make it a successful voyage. The 
+          members should be a part of college community, club, event, and activities. Moreover, 
+          he/she has led an event in the past and active in college participation.
+          Through this highly selective Program, you’ll gain work experience and get a chance 
+          to earn also. Imagine how its going to be helpful for you in shaping your career and 
+          become the next great leader.
+          <br/>
+          <br/>
+          If you feel you have the qualities of becoming Spade Ems campus ambassador, join in 
+          and be a part of family. We assure you of great work experience, learning, motivation
+          and growth. 
+          <br/>
+          <br/>
+          Hurry, Join in Now
+        </Description>}
         
         buttonRounded={true}
         textOnLeft={false}
-      //  primaryButtonText="Learn More"
+        primaryButtonText="Learn More"
         imageSrc={
-          process
+          headerimage
         }
         imageCss={imageCss}
         imageDecoratorBlob={false}
@@ -96,7 +99,7 @@ export default () => {
           <Description>
             <div className="responsibilty">
                  •  Promote our services in your college and try to target students  who are interested in web 
-                 development, graphic designing,  marketing, etc.<br/><br/>
+                    development, graphic designing,  marketing, etc.<br/><br/>
                  • Publicise by displaying posters on notice boards, sharing e-posters on WhatsApp, 
                  Facebook, etc., circulating emails, etc.<br/><br/>
                  •  Submit weekly reports.<br/><br/>
@@ -112,7 +115,7 @@ export default () => {
         textOnLeft={true}
         primaryButtonText="Learn More"
         imageSrc={
-          "https://www.verzeo.com/new/images/newblogs/good-ca.png"
+          headerimage
         }
         imageCss={imageCss}
         imageDecoratorBlob={false}
