@@ -13,7 +13,7 @@ import { ReactComponent as SignUpIcon } from "feather-icons/dist/icons/user-plus
 
 const Container = tw(ContainerBase)`min-h-screen text-white font-medium flex justify-center -m-8`;
 const Content = styled.div`
-${tw`max-w-screen-xl bg-cover bg-center bg-no-repeat m-0  bg-white text-gray-900 shadow sm:rounded-lg flex justify-center flex-1 py-5 `}
+${tw`max-w-full bg-cover bg-center bg-no-repeat m-0  bg-white text-gray-900 shadow sm:rounded-lg flex justify-center flex-1 py-5 `}
 ${props => `background-image: url("${props.imageSrc}");`}
 `; 
 tw.div`max-w-screen-xl  m-0 sm:mx-20 sm:my-16 bg-white text-gray-900 shadow sm:rounded-lg flex justify-center flex-1`;
