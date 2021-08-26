@@ -39,8 +39,7 @@ export default () => {
       <Hero
         heading={<> SPADE <br/> Campus Ambassador </>}
         description={
-          <Description>
-            
+          <Description> 
           </Description>}
         imageSrc="https://amigoz.app/static/amigoz/images/college_ambassador/college_ambassador.svg"
         imageCss={imageCss}
@@ -53,7 +52,7 @@ export default () => {
             
             heading={
           <>
-            About Campus Ambassador Process
+            About Campus Ambassador Program
           </>
           
         }
@@ -100,7 +99,7 @@ export default () => {
           <Description>
             <div className="responsibilty">
                  •  Promote our services in your college and try to target students  who are interested in web 
-                 development, graphic designing,  marketing, etc.<br/><br/>
+                    development, graphic designing,  marketing, etc.<br/><br/>
                  • Publicise by displaying posters on notice boards, sharing e-posters on WhatsApp, 
                  Facebook, etc., circulating emails, etc.<br/><br/>
                  •  Submit weekly reports.<br/><br/>
